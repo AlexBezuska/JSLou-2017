@@ -1,0 +1,22 @@
+<form class="form-horizontal" action="http://127.0.0.1:1337/add-event" method="post">
+  {{#each addEvent}}
+    {{#if label}}
+      <div class="form-group">
+        <label for="{{@index}}" class="col-sm-4 control-label">{{label}}{{#if required}}<span class="req">*</span>{{/if}}</label>
+        <div class="col-sm-8">
+          {{#if_eq element "input"}}
+            <input type="{{type}}" class="form-control" id="{{@key}}" name="{{@key}}"/>
+          {{/if_eq}}
+          {{#if_eq element "textarea"}}
+            <textarea class="form-control" id="{{@key}}" name="{{@key}}"></textarea>
+          {{/if_eq}}
+        </div>
+      </div>
+    {{/if}}
+  {{/each}}
+
+  <button type="submit" class="btn btn-default btn-lg pull-right">
+  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add Event
+</button>
+</form>
+

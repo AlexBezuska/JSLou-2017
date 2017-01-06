@@ -1,0 +1,24 @@
+{
+  "name": "jslou-2017",
+  "version": "0.1.0",
+  "description": "The official website for Louisville Kentucky's JavaScript community, established September 2013.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JSLou/JSLou-2017.git"
+  },
+  "author": "Alex Bezuska <abezuska@gmail.com> (http://alexbezuska.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JSLou/JSLou-2017/issues"
+  },
+  "homepage": "https://github.com/JSLou/JSLou-2017#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "body-parser": "^1.15.2",
+    "express-handlebars": "^3.0.0"
+  }
+}

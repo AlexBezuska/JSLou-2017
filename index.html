@@ -1,0 +1,157 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/handlebars.js"></script>
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>Add Event</h1>
+
+    <form class="form-horizontal" action="http://127.0.0.1:1337/form" method="post">
+
+      <div id="form-area"></div>
+
+      <button type="button" class="btn btn-primary">Add Event</button>
+
+    </form>
+
+  </div>
+
+
+  <script id="form-template" type="text/x-handlebars-template">
+    {{#each this}}
+      {{#if label}}
+        <div class="form-group">
+          <label for="{{this.key}}" class="col-sm-4 control-label">{{label}}{{#if required}}<span class="req">*</span>{{/if}}</label>
+          <div class="col-sm-8">
+            {{#if_eq element "input"}}
+            <input type="{{type}}" class="form-control" id="{{this.key}}" name="{{this.key}}"/>
+            {{/if_eq}}
+            {{#if_eq element "textarea"}}
+            <textarea class="form-control" id="{{this.key}}" name="{{this.key}}"></textarea>
+            {{/if_eq}}
+
+          </div>
+        </div>
+      {{/if}}
+    {{/each}}
+  </script>
+
+</body>
+<script>
+
+
+var formQuestions = {
+  "firstName":	{
+    "label": "First Name",
+    "type": "text",
+    "element": "input"
+  },
+  "lastName" : {
+    "label": "Last Name",
+    "type": "text",
+    "element": "input"
+  },
+  "day": {
+    "label": "Day of the week",
+    "type": "text",
+    "element": "input"
+  },
+  "date": {
+    "label": "Date",
+    "type": "date",
+    "element": "input"
+  },
+  "time": {
+    "label": "Time",
+    "type": "time",
+    "element": "input"
+  },
+  "googleMapsURL": {
+    "label": "Google Maps URL",
+    "type": "text",
+    "element": "input"
+  },
+  "locationName": {
+    "label": "Location",
+    "type": "text",
+    "element": "input"
+  },
+  "meetupURL": {
+    "label": "Meetup URL",
+    "type": "text",
+    "element": "input"
+  },
+  "photoURL":{
+    "label": "Photo URL",
+    "type": "text",
+    "element": "input"
+  },
+  "photoAltText": {
+    "label": "Photo alt text",
+    "type": "text",
+    "element": "input"
+  },
+  "links" :{
+    "type" : {
+      "label": "site",
+      "type": "text",
+      "element": "input"
+    },
+    "URL": {
+      "label": "URL",
+      "type": "text",
+      "element": "input"
+    }
+  },
+  "title": {
+    "label": "Title",
+    "type": "text",
+    "element": "input"
+  },
+  "description": {
+    "label": "Description",
+    "element":"textarea",
+    "type": "textarea"
+  },
+  "attendance": {
+    "label": "Meetup attendance count",
+    "type": "number",
+    "element": "input"
+  },
+  "rsvps": {
+    "label": "Meetup RSVP count",
+    "type": "number",
+    "element": "input"
+  }
+};
+
+Handlebars.registerHelper('if_eq', function(a, b, opts) {
+    if(a == b) // Or === depending on your needs
+        return opts.fn(this);
+    else
+        return opts.inverse(this);
+});
+
+var templateSource = document.getElementById('form-template');
+var template = Handlebars.compile(templateSource.innerHTML);
+var formArea = document.getElementById('form-area');
+formArea.innerHTML = template(formQuestions);
+
+</script>
+</html>
+
+
+
+
+
