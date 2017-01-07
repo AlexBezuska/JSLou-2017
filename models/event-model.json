@@ -1,38 +1,34 @@
 {
-  "id": {
-    "label": "id",
-    "type": "private",
-    "element": "input"
-  },
-
-  "title": {
-    "label": "Event Title",
-    "type": "text",
-    "element": "input"
-  },
-
-
-  "when": {
-    "label": "Date/Time Info",
-    "type": "formatting",
-    "panel-type": "panel-primary",
-    "wrapper": "start"
-  },
+	"id": {
+		"label": "id",
+		"type": "private",
+		"element": "input"
+	},
+	"title": {
+		"label": "Event Title",
+		"type": "text",
+		"element": "input"
+	},
+	"when": {
+		"label": "Date/Time Info",
+		"type": "formatting",
+		"panel-type": "panel-primary",
+		"wrapper": "start"
+	},
 	"day": {
 		"label": "Day of the week",
 		"type": "text",
-		"element": "input",
-		"default": "Wednesday"
+		"element": "input"
 	},
 	"dateStart": {
 		"label": "Start Date",
-    "required": true,
+		"required": true,
 		"type": "date",
 		"element": "input"
 	},
-  "timeStart": {
+	"timeStart": {
 		"label": "Start Time",
-    "required": true,
+		"required": true,
 		"type": "text",
 		"element": "input"
 	},
@@ -41,125 +37,109 @@
 		"type": "date",
 		"element": "input"
 	},
-  "timeEnd": {
+	"timeEnd": {
 		"label": "End Time",
 		"type": "text",
 		"element": "input"
 	},
-  "when-end": {
-    "type": "formatting",
-    "wrapper": "end"
-  },
-
-
-  "where": {
-    "label": "Location Info",
-    "type": "formatting",
-    "panel-type": "panel-primary",
-    "wrapper": "start"
-  },
+	"when-end": {
+		"type": "formatting",
+		"wrapper": "end"
+	},
+	"where": {
+		"label": "Location Info",
+		"type": "formatting",
+		"panel-type": "panel-primary",
+		"wrapper": "start"
+	},
 	"directions": {
 		"label": "Google Maps URL",
 		"type": "text",
-    "url": true,
-		"element": "input",
-		"default": "https://www.google.com/maps?f=q&hl=en&q=612+W+Washington+St.,+Louisville,+KY+40202,+KY,+us"
+		"url": true,
+		"element": "input"
 	},
 	"location": {
 		"label": "Location",
 		"type": "text",
-		"element": "input",
-		"default": "Warp Zone Louisville"
+		"element": "input"
 	},
-  "where-end": {
-    "type": "formatting",
-    "wrapper": "end"
-  },
-
-
-
-
-  "person": {
-    "label": "Speaker Info",
-    "type": "formatting",
-    "panel-type": "panel-primary",
-    "wrapper": "start"
-  },
-
-
-  "firstName": {
-    "label": "Speaker First Name",
-    "type": "text",
-    "element": "input"
-  },
-  "lastName": {
-    "label": "Speaker First Last",
-    "type": "text",
-    "element": "input"
-  },
+	"where-end": {
+		"type": "formatting",
+		"wrapper": "end"
+	},
+	"person": {
+		"label": "Speaker Info",
+		"type": "formatting",
+		"panel-type": "panel-primary",
+		"wrapper": "start"
+	},
+	"firstName": {
+		"label": "Speaker First Name",
+		"type": "text",
+		"element": "input"
+	},
+	"lastName": {
+		"label": "Speaker First Last",
+		"type": "text",
+		"element": "input"
+	},
 
 	"description": {
 		"label": "Description",
 		"element": "textarea",
 		"type": "textarea"
 	},
-  "photo": {
-    "label": "Photo URL",
-    "type": "text",
-    "url": true,
-    "element": "input",
-    "default": "img/hack-night-logo-wz.jpg"
-  },
-  "photoAlt": {
-    "label": "Photo alt text",
-    "type": "text",
-    "element": "input"
-  },
-  "links": {
-    "type": {
-      "label": "site",
-      "type": "text",
-      "element": "input"
-    },
-    "URL": {
-      "label": "URL",
-      "type": "text",
-      "element": "input"
-    }
-  },
-  "person-end": {
-    "type": "formatting",
-    "wrapper": "end"
-  },
-
-
-  "meetup": {
-    "label": "Meetup Info",
-    "type": "formatting",
-    "panel-type": "panel-primary",
-    "wrapper": "start"
-  },
+	"photo": {
+		"label": "Photo URL",
+		"type": "text",
+		"url": true,
+		"element": "input"
+	},
+	"photoAlt": {
+		"label": "Photo alt text",
+		"type": "text",
+		"element": "input"
+	},
+	"links": {
+		"type": {
+			"label": "site",
+			"type": "text",
+			"element": "input"
+		},
+		"URL": {
+			"label": "URL",
+			"type": "text",
+			"element": "input"
+		}
+	},
+	"person-end": {
+		"type": "formatting",
+		"wrapper": "end"
+	},
+	"meetup-block": {
+		"label": "Meetup Info",
+		"type": "formatting",
+		"panel-type": "panel-primary",
+		"wrapper": "start"
+	},
 	"meetup": {
 		"label": "Meetup URL",
 		"type": "text",
-    "url": true,
+		"url": true,
 		"element": "input"
 	},
 	"attendance": {
 		"label": "Meetup attendance count",
 		"type": "number",
-		"element": "input",
-		"default": "0"
+		"element": "input"
 	},
 	"rsvps": {
 		"label": "Meetup RSVP count",
 		"type": "number",
-		"element": "input",
-		"default": "0"
+		"element": "input"
 	},
-  "meetup-end": {
-    "type": "formatting",
-    "wrapper": "end"
-  }
-
+	"meetup-end": {
+		"type": "formatting",
+		"wrapper": "end"
+	}
 }

@@ -21,8 +21,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 var state = {
   eventsFile : "./data/events.json",
   events: require("./data/events.json"),
-  cleanEventModel : require("./models/event-model.json"),
   eventModel : require("./models/event-model.json"),
+  eventDefaults : require("./models/event-defaults.json"),
   task: "create"
 }
 
@@ -32,29 +32,20 @@ app.get('/', function (req, res) {
   res.render('home', {layout: 'main'});
 });
 
-app.get('/manage-events/', function (req, res, next) {
-  res.redirect('/manage-events/new');
-});
-
-
-
-app.get('/manage-events/:editingEvent?/:justAdded?', function (req, res, next) {
-
-
-  if (eventExists(state, req.params.editingEvent)) {
-    state.task = "edit";
-    var editingEventData = selectEvent(state, req.params.editingEvent);
-    fillDefaults(state, editingEventData);
+app.get('/manage-events', function (req, res, next) {
+  var eventId = req.query.id;
+  if (eventId) {
+    if (eventExists(state, eventId)) {
+      state.task = "edit";
+      fillDefaults(state, selectEvent(state, eventId));
+    }
+  } else {
+    state.task = "create";
+    fillDefaults(state, state.eventDefaults);
   }
-
-  // if (req.params.editingEvent === "new"){
-  //   state.task = "create";
-  //   clearDefaults(state);
-  // }
 
   res.render('manage-events', {
     editingEvent: req.params.editingEvent,
-    justAdded: req.params.justAdded,
     addEvent: state.eventModel,
     events: state.events,
     state: state,
@@ -63,17 +54,16 @@ app.get('/manage-events/:editingEvent?/:justAdded?', function (req, res, next) {
 
 });
 
+
 app.post('/manage-events/submit', function(req, res, next) {
   writeEventsFile (state.eventsFile, addEvent(state, req.body));
-  state.task = "create";
-  clearDefaults(state);
-  res.redirect('/manage-events/new');
+  res.redirect('/manage-events');
 });
 
-app.get('/delete-event/:eventToDelete', function(req, res, next) {
-  console.log("delete event with this date:", req.params.eventToDelete);
-  writeEventsFile (state.eventsFile, deleteEvent(state, req.params.eventToDelete));
-  res.redirect('/manage-events/new');
+app.get('/delete-event', function(req, res, next) {
+  var eventId = req.query.id;
+  writeEventsFile (state.eventsFile, deleteEvent(state, eventId) );
+  res.redirect('/manage-events');
 });
 
 
@@ -92,15 +82,13 @@ function fillDefaults(state, eventObject){
   }
 }
 
-function clearDefaults(state){
-  console.log("wtf");
-  state.eventModel = state.cleanEventModel;
-}
-
 function eventExists(state, id){
+  if (id === ""){
+    return false;
+  }
   return cleanJSON(state.events).filter(
     obj => obj.id === id
-  ).length > -1;
+  );
 }
 
 function selectEvent(state, id){
@@ -113,6 +101,7 @@ function deleteEvent(state, id){
   state.events = cleanJSON(state.events).filter(
     obj => obj.id !== id
   );
+  console.log("Delete event with id:", id);
   return state.events;
 }
 
@@ -126,12 +115,16 @@ function cleanJSON(input){
 
 function addEvent(state, newEvent){
   if (eventExists(state, newEvent.id)){
-    var storeId = newEvent.id
+    var storeId = newEvent.id;
     deleteEvent(state, newEvent.id);
+    console.log("storeId", storeId);
     newEvent.id = storeId;
+    console.log("Updated existing event with id:", newEvent.id);
   }else{
     newEvent.id = uuid();
+    console.log("Created new event with id:", newEvent.id);
   }
+
   var newArray = cleanJSON(state.events);
   newArray.unshift(newEvent);
   state.events = newArray;

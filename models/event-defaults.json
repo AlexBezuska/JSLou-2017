@@ -1,0 +1,18 @@
+{
+  "title": "",
+  "day": "Wednesday",
+  "dateStart": "",
+  "timeStart": "7pm",
+  "dateEnd": "",
+  "timeEnd": "",
+  "directions": "https://www.google.com/maps?f=q&hl=en&q=612+W+Washington+St.,+Louisville,+KY+40202,+KY,+us",
+  "location": "Warp Zone Louisville",
+  "firstName": "",
+  "lastName": "",
+  "description": "",
+  "photo": "img/hack-night-logo-wz.jpg",
+  "photoAlt": "JSLou JavaScript Louisville Kentucky",
+  "meetup": "",
+  "attendance": 0,
+  "rsvps": 0
+}
