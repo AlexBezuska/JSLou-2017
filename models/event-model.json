@@ -79,7 +79,7 @@
 		"element": "input"
 	},
 	"lastName": {
-		"label": "Speaker First Last",
+		"label": "Speaker Last Name",
 		"type": "text",
 		"element": "input"
 	},
