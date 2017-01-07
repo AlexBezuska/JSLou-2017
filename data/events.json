@@ -1,79 +1,21 @@
 [
   {
-    "id": "1646911b-5748-4b98-b5df-1cac13482b14",
-    "title": "\"Putting it all together, it's time to take a poop...Together!\" - a secure deployment ready NodeJs crud app",
-    "day": "Wednesday",
-    "dateStart": "2016-02-17",
-    "timeStart": "7pm",
-    "dateEnd": "",
-    "timeEnd": "",
-    "directions": "https://www.google.com/maps?f=q&hl=en&q=612+W+Washington+St.,+Louisville,+KY+40202,+KY,+us",
-    "location": "Warp Zone Louisville",
-    "firstName": "Adam",
-    "lastName": "Bell",
-    "description": "I will demonstrate how to build and end to end NodeJS webapp including authentication, client side validation, and logging. I will be using the following technologies for the discussion and demonstration: Nodejs, Express, PassportJS, Mongoose, Angular, and Bootstrap. I will also demonstrate how to use the mongoose schema and Angulars ngMessages to build client side validations.",
-    "photo": "img/speakers/adam-bell.jpg",
-    "photoAlt": "Adam Bell JavaScript developer Louisville, KY Feburary 17, 20156",
-    "meetup": "http://www.meetup.com/JSLouKY/events/227280742/",
-    "attendance": "9",
-    "rsvps": "9"
-  },
-  {
-    "id": "8d6ce37c-a311-4ae1-afa3-5a54e30d55e1",
-    "title": "Shamwow extravaganza!",
-    "day": "Wednesday",
-    "dateStart": "2017-03-14",
-    "timeStart": "7pm",
-    "dateEnd": "",
-    "timeEnd": "",
-    "directions": "https://www.google.com/maps?f=q&hl=en&q=612+W+Washington+St.,+Louisville,+KY+40202,+KY,+us",
-    "location": "Warp Zone Louisville",
-    "firstName": "Carrot",
-    "lastName": "Pipperoni",
-    "description": "",
-    "photo": "img/hack-night-logo-wz.jpg",
-    "photoAlt": "JSLou JavaScript Louisville Kentucky",
-    "meetup": "",
-    "attendance": "",
-    "rsvps": ""
-  },
-  {
-    "id": "083294a3-1399-4a7b-80bb-6ac360bfd045",
-    "title": "asdasdasdas",
-    "day": "Wednesday",
-    "dateStart": "2017-01-12",
-    "timeStart": "7pm",
-    "dateEnd": "",
-    "timeEnd": "",
-    "directions": "https://www.google.com/maps?f=q&hl=en&q=612+W+Washington+St.,+Louisville,+KY+40202,+KY,+us",
-    "location": "Warp Zone Louisville",
-    "firstName": "",
-    "lastName": "",
-    "description": "",
-    "photo": "img/hack-night-logo-wz.jpg",
-    "photoAlt": "JSLou JavaScript Louisville Kentucky",
-    "meetup": "",
-    "attendance": "",
-    "rsvps": ""
-  },
-  {
-    "id": "6795635c-70c1-4546-b985-b210e8c9d3a8",
-    "title": "JSLou JavaScript ⚡Lightning talks!⚡",
+    "firstName": "Lightning Talks",
+    "lastName": "Series",
     "day": "Wednesday",
     "dateStart": "2017-02-15",
     "timeStart": "7pm",
-    "dateEnd": "",
-    "timeEnd": "",
     "directions": "https://www.google.com/maps?f=q&hl=en&q=612+W+Washington+St.,+Louisville,+KY+40202,+KY,+us",
     "location": "Warp Zone Louisville",
-    "firstName": "Lightning Talks",
-    "lastName": "Series",
-    "description": "Lightning talks in the new year! Let me know if you would like to give a talk: abezuska@gmail.com ",
+    "meetup": "https://www.meetup.com/JSLouKY/events/236696682/",
     "photo": "img/hack-night-logo-wz.jpg",
     "photoAlt": "JSLou JavaScript ⚡Lightning talks!⚡",
-    "meetup": "https://www.meetup.com/JSLouKY/events/236696682/",
-    "attendance": "",
-    "rsvps": ""
+    "links": [],
+    "title": "JSLou JavaScript ⚡Lightning talks!⚡",
+    "description": "Lightning talks in the new year! Let me know if you would like to give a talk: abezuska@gmail.com ",
+    "attendance": 0,
+    "rsvps": 0,
+    "id": "cf76b165-faf5-4084-9c4e-1e5b713ac61b"
   },
   {
     "firstName": "",
@@ -91,7 +33,7 @@
     "description": "Come hang out, chat, and work on anything JavaScript related. Be sure to bring a laptop this is a time to get things done on your existing projects not a normal structured meeting!",
     "attendance": 0,
     "rsvps": 0,
-    "id": "782ebfcc-7547-4fe6-9ece-00ce20639882"
+    "id": "58f0f7a3-ef21-4da3-ab51-03376e6c6111"
   },
   {
     "firstName": "Josh",
@@ -118,7 +60,7 @@
     "description": "Check out elm here: http://elm-lang.org/  Full talk description coming soon!",
     "attendance": 0,
     "rsvps": 0,
-    "id": "dd89a63d-0a05-4345-9c9a-d357f27103a9"
+    "id": "85c1d6a2-0535-471d-8f98-089a58abd420"
   },
   {
     "firstName": "",
@@ -136,7 +78,7 @@
     "description": "Come hang out, chat, and work on anything JavaScript related. Be sure to bring a laptop this is a time to get things done on your existing projects not a normal structured meeting!",
     "attendance": 11,
     "rsvps": 13,
-    "id": "b130d0b3-e259-4354-8452-685f8e842540"
+    "id": "f403995b-4985-499f-a28e-e3146a48b628"
   },
   {
     "firstName": "Lightning Talks",
@@ -155,7 +97,7 @@
     "description": "Sign up to give a talk now! email abezuska@gmail.com with the subject \"JSLOU LIGHTNING TALKS\"",
     "attendance": 11,
     "rsvps": 11,
-    "id": "613442da-299e-4d15-977e-179152b16555"
+    "id": "ee78f61e-806f-465c-9bd7-034c5ccd6c77"
   },
   {
     "firstName": "",
@@ -173,7 +115,7 @@
     "description": "Come hang out, chat, and work on anything JavaScript related. Be sure to bring a laptop this is a time to get things done on your existing projects not a normal structured meeting!",
     "attendance": 0,
     "rsvps": 0,
-    "id": "1dcc2b4c-327c-420a-843c-0b518f784ad8"
+    "id": "551bad90-5beb-4432-930e-3de46cc46e90"
   },
   {
     "firstName": "Craig",
@@ -209,7 +151,25 @@
     "description": "TypeScript is a free and open-source programming language developed and maintained by Microsoft. It is a strict superset of JavaScript, and adds optional static typing and class-based object-oriented programming to the language.",
     "attendance": 24,
     "rsvps": 24,
-    "id": "e92effd2-07d8-4ef8-b3a2-2d32e78d38f1"
+    "id": "667fe177-17b0-48fb-8689-258428680551"
+  },
+  {
+    "firstName": "",
+    "lastName": "",
+    "day": "Wednesday",
+    "dateStart": "2016-11-02",
+    "timeStart": "7pm",
+    "directions": "https://www.google.com/maps?f=q&hl=en&q=612+W+Washington+St.,+Louisville,+KY+40202,+KY,+us",
+    "location": "Warp Zone Louisville",
+    "meetup": "https://www.meetup.com/JSLouKY/events/231524593/",
+    "photo": "img/hack-night-logo-wz.jpg",
+    "photoAlt": "JSLOU JAVASCRIPT HACK NIGHT",
+    "links": [],
+    "title": "JSLOU JAVASCRIPT HACK NIGHT",
+    "description": "Come hang out, chat, and work on anything JavaScript related. Be sure to bring a laptop this is a time to get things done on your existing projects not a normal structured meeting!",
+    "attendance": 9,
+    "rsvps": 9,
+    "id": "9017feaf-adc8-4787-bd66-79288686b6c8"
   },
   {
     "firstName": "Lightning Talks",
@@ -227,7 +187,7 @@
     "description": "Our first lightning talks session! 4 speakers will talked for 5-25 minutes each to give breief overviews of concepts of technologies. Speakers were: Craig Burton, Eric Lathrop, Ben Wiley, and Thomas Neirynck",
     "attendance": 18,
     "rsvps": 18,
-    "id": "68a96254-e6e4-46f4-a042-d032c370dffa"
+    "id": "184c6bd2-97b0-494c-9919-a52150a3becb"
   },
   {
     "firstName": "",
@@ -245,7 +205,7 @@
     "description": "Come hang out, chat, and work on anything JavaScript related. Be sure to bring a laptop this is a time to get things done on your existing projects not a normal structured meeting!",
     "attendance": 5,
     "rsvps": 5,
-    "id": "1bbe3f54-2681-4be6-875b-05f6e7b3802e"
+    "id": "4a9b3503-fa07-4180-bf33-8933535ff04e"
   },
   {
     "firstName": "Aaron",
@@ -263,7 +223,7 @@
     "description": "A really brief introduction to asynchronous javascript code followed by a tutorial on handling async operations with ES6 Promises, and capped off with some handy-dandy tips/patterns for using Promises.",
     "attendance": 7,
     "rsvps": 7,
-    "id": "084875d3-c86e-47f1-af0f-12f761e892c3"
+    "id": "ed8e80ab-aa3d-4d4d-bc7c-1cc0ad4b8e65"
   },
   {
     "firstName": "",
@@ -281,7 +241,7 @@
     "description": "Come hang out, chat, and work on anything JavaScript related. Be sure to bring a laptop this is a time to get things done on your existing projects not a normal structured meeting!",
     "attendance": 8,
     "rsvps": 8,
-    "id": "2d7dcfed-d5e6-4cc1-adf3-cde959c4ee5c"
+    "id": "530fe6f1-d1f2-4a61-a07d-d78a9766ec51"
   },
   {
     "firstName": "Eric",
@@ -309,7 +269,7 @@
     "description": "Description coming soon ",
     "attendance": 15,
     "rsvps": 15,
-    "id": "b7bd9354-e178-4e6a-9a1c-72cff6ad1677"
+    "id": "11ec372e-4b7d-41fb-8059-776f93596305"
   },
   {
     "firstName": "",
@@ -327,7 +287,7 @@
     "description": "Come hang out, chat, and work on anything JavaScript related. Be sure to bring a laptop this is a time to get things done on your existing projects not a normal structured meeting!",
     "attendance": 8,
     "rsvps": 8,
-    "id": "d3b50711-8ccd-42cc-a1ed-5d3cdc62c140"
+    "id": "72029f00-f4ee-4e86-a45e-dd888fef0bda"
   },
   {
     "firstName": "",
@@ -345,7 +305,7 @@
     "description": "Come hang out, chat, and work on anything JavaScript related. Be sure to bring a laptop this is a time to get things done on your existing projects not a normal structured meeting!",
     "attendance": 13,
     "rsvps": 13,
-    "id": "583556a3-8ed5-46ab-a9d5-daa1aa36cdc0"
+    "id": "cdc88c65-a318-4c5e-8f12-6098664de0e3"
   },
   {
     "firstName": "Alan",
@@ -385,7 +345,7 @@
     "description": "React CDK is not just another React boilerplate. It’s much more than that, and it comes with support from Kadira. With React CDK, you can focus on developing your React component or utility while React CDK takes care of all the other stuff. ",
     "attendance": 18,
     "rsvps": 24,
-    "id": "5d63ed4f-ea07-41ce-93cc-5e527a2d547d"
+    "id": "68f9fc07-50fb-483d-8ab3-2adfb724b333"
   },
   {
     "firstName": "",
@@ -403,7 +363,25 @@
     "description": "Come hang out, chat, and work on anything JavaScript related. Be sure to bring a laptop this is a time to get things done on your existing projects not a normal structured meeting!",
     "attendance": 6,
     "rsvps": 6,
-    "id": "af7a12d4-4eb8-4dea-9ea5-f3614c00fc2d"
+    "id": "ca82a088-52ab-4b7f-a95d-84d33cfd04d8"
+  },
+  {
+    "firstName": "",
+    "lastName": "",
+    "day": "Wednesday",
+    "dateStart": "2016-06-01",
+    "timeStart": "7pm",
+    "directions": "https://www.google.com/maps?f=q&hl=en&q=612+W+Washington+St.,+Louisville,+KY+40202,+KY,+us",
+    "location": "Event cancelled",
+    "meetup": "",
+    "photo": "img/hack-night-logo-wz.jpg",
+    "photoAlt": "",
+    "links": [],
+    "title": "JSLOU JAVASCRIPT HACK NIGHT",
+    "description": "Come hang out, chat, and work on anything JavaScript related. Be sure to bring a laptop this is a time to get things done on your existing projects not a normal structured meeting!",
+    "attendance": 6,
+    "rsvps": 6,
+    "id": "d3400dbb-334c-4752-86d1-e1ec24afb34e"
   },
   {
     "firstName": "",
@@ -421,7 +399,7 @@
     "description": "Cancelled - sorry for the inconvenience.",
     "attendance": 0,
     "rsvps": 0,
-    "id": "b5e333b7-e924-4741-b472-f224c211c42b"
+    "id": "6912cebe-39b5-49f9-a89b-ee6d71df8bc2"
   },
   {
     "firstName": "",
@@ -439,7 +417,7 @@
     "description": "Cancelled - sorry for the inconvenience.",
     "attendance": 0,
     "rsvps": 0,
-    "id": "66c39170-568e-41c4-8081-7a3351a1798f"
+    "id": "8f4ba3e9-362c-4cc4-b22c-808378db2d51"
   },
   {
     "firstName": "Craig",
@@ -474,7 +452,7 @@
     "description": "React has been gaining popularity in the web development arena, and is quickly becoming one of the most popular JavaScript view frameworks for new projects. This talk will introduce you to the core concepts of React, as well as Redux, an amazing library for handling all of the application state for our React application.",
     "attendance": 28,
     "rsvps": 28,
-    "id": "75932ce5-683f-4be2-83ed-b747728782e5"
+    "id": "dd014bbf-5d6b-4d51-8f08-9dea4aa6f969"
   },
   {
     "firstName": "",
@@ -492,7 +470,7 @@
     "description": "Come hang out, chat, and work on anything JavaScript related. Be sure to bring a laptop this is a time to get things done on your existing projects not a normal structured meeting!",
     "attendance": 12,
     "rsvps": 12,
-    "id": "b9bc96c4-fcef-41eb-870b-1cb3df5c10ab"
+    "id": "bfede1db-3a07-415e-925b-d47209ddcdec"
   },
   {
     "firstName": "Ben",
@@ -510,7 +488,34 @@
     "description": "Join JavaScripters from around Louisville Wednesday, March 2nd, and learn to write functional JavaScript like a pro! You'll be able to work at your own pace, and get your hands dirty tackling a series of challenges accessible and fun for JavaScript beginners and veterans alike.",
     "attendance": 19,
     "rsvps": 19,
-    "id": "ee7d6771-2d0c-4f44-8718-c69c20d39ac7"
+    "id": "f23d205f-62c8-4611-8215-5b4f8145b320"
+  },
+  {
+    "firstName": "Adam",
+    "lastName": "Bell",
+    "day": "Wednesday",
+    "dateStart": "2016-02-17",
+    "timeStart": "7pm",
+    "directions": "https://www.google.com/maps?f=q&hl=en&q=612+W+Washington+St.,+Louisville,+KY+40202,+KY,+us",
+    "location": "Warp Zone Louisville",
+    "meetup": "http://www.meetup.com/JSLouKY/events/227280742/",
+    "photo": "img/speakers/adam-bell.jpg",
+    "photoAlt": "Adam Bell JavaScript developer Louisville, KY Feburary 17, 20156",
+    "links": [
+      {
+        "type": "GitHub",
+        "url": "https://github.com/AdamPBell"
+      },
+      {
+        "type": "LinkedIn",
+        "url": "http://LinkedIn.com/in/adambellp"
+      }
+    ],
+    "title": "\"Putting it all together\" - a secure deployment ready NodeJs crud app",
+    "description": "I will demonstrate how to build and end to end NodeJS webapp including authentication, client side validation, and logging. I will be using the following technologies for the discussion and demonstration: Nodejs, Express, PassportJS, Mongoose, Angular, and Bootstrap. I will also demonstrate how to use the mongoose schema and Angulars ngMessages to build client side validations.",
+    "attendance": 9,
+    "rsvps": 9,
+    "id": "7d34b19f-1de0-4900-a5e7-00d41b5d2cfc"
   },
   {
     "firstName": "",
@@ -528,7 +533,7 @@
     "description": "Come hang out, chat, and work on anything JavaScript related. Be sure to bring a laptop this is a time to get things done on your existing projects not a normal structured meeting!",
     "attendance": 10,
     "rsvps": 10,
-    "id": "9bc365cc-1bcd-4abb-a826-760931a984fe"
+    "id": "68d03146-fc67-432c-9d77-fed964fc43f2"
   },
   {
     "firstName": "",
@@ -546,7 +551,7 @@
     "description": "Cancelled due to weather",
     "attendance": 0,
     "rsvps": 0,
-    "id": "9b237929-ed33-4bdc-958a-ba6bfbcd1eca"
+    "id": "3a6089de-0a0e-4225-97f8-86e1c75ce60c"
   },
   {
     "firstName": "",
@@ -564,7 +569,7 @@
     "description": "",
     "attendance": 8,
     "rsvps": 8,
-    "id": "5dbd902e-41b6-4c64-b77d-bb31d5de3ffd"
+    "id": "1161d7b4-5101-4710-ae27-84ff88005b04"
   },
   {
     "firstName": "Matthew",
@@ -592,7 +597,7 @@
     "description": "Learn how to build the fastest single page applications with DoneJS (donejs.com). This talk details some most important performance techniques used in single page applications like: server side rendering, progressively loading optimized bundles, and use of content delivery networks. We will discover how DoneJS solves these problems while building a simple real-time chat application.",
     "attendance": 25,
     "rsvps": 25,
-    "id": "7b9842da-2042-4924-99ee-bd6c39072753"
+    "id": "0abe1906-6e99-467f-8e4a-2ff51a7f6b7c"
   },
   {
     "firstName": "",
@@ -610,7 +615,7 @@
     "description": "",
     "attendance": 9,
     "rsvps": 10,
-    "id": "aaa8be86-1170-4118-a8dc-55cac3d88e98"
+    "id": "d5b89a33-d2ec-444b-9da2-1c85ae0acba1"
   },
   {
     "firstName": "Alex",
@@ -645,7 +650,7 @@
     "description": "Learn how building templates using Handlebars can keep you from repeating yourself and make your HTML smarter. I will cover both front-end handlebars usage, and back-end templating with Node.js",
     "attendance": 28,
     "rsvps": 28,
-    "id": "cb2232ea-af4b-4310-96ac-448f41832855"
+    "id": "d27d2c47-5e68-4352-b187-03395f9e3aaf"
   },
   {
     "firstName": "",
@@ -663,7 +668,7 @@
     "description": "",
     "attendance": 13,
     "rsvps": 13,
-    "id": "234eea62-a327-49a4-a09d-3f9942a2a82c"
+    "id": "41beac49-b2eb-4dc2-bc26-849aab291676"
   },
   {
     "firstName": "CLAYTON",
@@ -693,7 +698,7 @@
     "attendance": 18,
     "rsvps": 23,
     "presentation": "https://github.com/ClaytonHunt/Talks/tree/master/MakingThisGoAway",
-    "id": "8b979de5-cb4e-4744-b0f0-96851c2ca655"
+    "id": "c2677d9b-caf7-4d39-b386-a2471f7785d8"
   },
   {
     "day": "Wednesday",
@@ -708,7 +713,7 @@
     "description": "Come hang out, chat, and work on anything JavaScript related!",
     "attendance": 9,
     "rsvps": 9,
-    "id": "b6d43e15-1cd3-4ebd-b3e0-1d06a65049df"
+    "id": "b96b3781-c07d-4290-bfe3-dd3c30976815"
   },
   {
     "day": "Wednesday",
@@ -723,7 +728,7 @@
     "description": "Come hang out, chat, and work on anything JavaScript related!",
     "attendance": 9,
     "rsvps": 9,
-    "id": "78a2e59f-78db-4a16-bdec-90d01b8fc07c"
+    "id": "fc550bd8-ca36-437c-b9fa-5abf926e2f38"
   },
   {
     "day": "Wednesday",
@@ -738,7 +743,7 @@
     "description": "Come hang out, chat, and work on anything JavaScript related!",
     "attendance": 8,
     "rsvps": 8,
-    "id": "3abbb669-379f-4725-a35f-01ece3ec2f20"
+    "id": "d7282616-c444-422b-9e66-e160db8c028f"
   },
   {
     "day": "Wednesday",
@@ -753,7 +758,7 @@
     "description": "Come hang out, chat, and work on anything JavaScript related!",
     "attendance": 19,
     "rsvps": 19,
-    "id": "0469d883-bc87-4dad-a51c-92825ab0770f"
+    "id": "f5cac262-61d8-4ca1-a589-73445270d42d"
   },
   {
     "day": "Wednesday",
@@ -768,7 +773,7 @@
     "description": "Come hang out, chat, and work on anything JavaScript related!",
     "attendance": 5,
     "rsvps": 5,
-    "id": "cc135abc-21b0-4b61-add5-9f40d80b2afc"
+    "id": "98584cac-4cc7-4c76-aee2-7bb6d1af3f35"
   },
   {
     "firstName": "",
@@ -785,7 +790,7 @@
     "description": "Come hang out, chat, and work on anything JavaScript related!",
     "attendance": 5,
     "rsvps": 5,
-    "id": "d161bf46-70e4-482b-af81-98dd189005f2"
+    "id": "36647010-d6d9-4994-9b64-11f72e64eaab"
   },
   {
     "firstName": "",
@@ -802,7 +807,7 @@
     "description": "Come hang out, chat, and work on anything JavaScript related!",
     "attendance": 23,
     "rsvps": 23,
-    "id": "53a111f6-78ad-4255-b873-16585cc10f4f"
+    "id": "00249c41-03da-4d38-b992-1ec3946cdfbf"
   },
   {
     "firstName": "",
@@ -819,7 +824,7 @@
     "description": "Come hang out, chat, and work on anything JavaScript related!",
     "attendance": 12,
     "rsvps": 12,
-    "id": "1c314e28-07a8-4a55-8363-041d91b585fc"
+    "id": "8d7493c1-535a-4023-867c-47bea7d2404f"
   },
   {
     "firstName": "Craig",
@@ -848,7 +853,7 @@
     "description": "Introduction to functional concepts in javascript using map, reduce, and filter",
     "attendance": 25,
     "rsvps": 25,
-    "id": "bc6c21bc-8252-4d7a-8f85-b37ba6e0d482"
+    "id": "b69854fd-b629-4565-bdb1-71d5dfd2eea4"
   },
   {
     "firstName": "Matthew",
@@ -887,7 +892,7 @@
     "description": "ECMAScript 6, the upcoming new standard for JavaScript, includes modules for the first time. We’ll go over the history of using modules in the browser, from simple script tags, to module loaders like RequireJS and Browserify, and then look at the upcoming Loader standard and how you can hack it to provide additional capabilities to your workflow.",
     "attendance": 16,
     "rsvps": 16,
-    "id": "3473098d-6fcf-4ade-8b1c-796f6dcd1ada"
+    "id": "cacfabff-0c51-4f02-817c-f5978976d250"
   },
   {
     "firstName": "Michael",
@@ -921,7 +926,7 @@
     "description": "Ruby / Rails / Ember / JavaScript developer for healthcare & scientific companies. Husband & dad who enjoys traveling, being outside, startups & yellow labs.",
     "attendance": 12,
     "rsvps": 12,
-    "id": "f92eb7c1-cd73-4d2d-a34d-b1dfe58e713c"
+    "id": "9d73206c-1df6-4382-b1ce-01a688c8edcb"
   },
   {
     "firstName": "Ed",
@@ -949,7 +954,7 @@
     "description": "",
     "home": "Louisville, Kentucky",
     "bio": "",
-    "id": "d9cb70e1-31d9-4475-9642-3d2e5a58fade"
+    "id": "89ba833c-2f09-4102-9b49-252a2b22d9b1"
   },
   {
     "firstName": "Matt",
@@ -972,7 +977,7 @@
     "description": "",
     "home": "Louisville, Kentucky",
     "bio": "",
-    "id": "9471b0a0-ed62-422f-80c1-1af712f38f23"
+    "id": "64cd4d9b-2bdf-4a11-bb9d-cb066d9b3846"
   },
   {
     "firstName": "William",
@@ -1005,7 +1010,7 @@
     "description": "",
     "home": "Louisville, Kentucky",
     "bio": "",
-    "id": "3732bf65-482d-4341-bfb3-1c1ac93478af"
+    "id": "f5b14f04-d0d6-4881-a5c3-dfe249f7589a"
   },
   {
     "firstName": "Thomas Neirynck &",
@@ -1028,7 +1033,7 @@
     "description": "'A developer API for adding maps to a web app.' and 'Extending enterprise applications with javascript and Greasemonkey.'",
     "home": "Louisville, Kentucky",
     "bio": "",
-    "id": "16dde0d6-8708-4fd6-8337-5baba7e49cb8"
+    "id": "a3367171-d37f-4da6-868a-bd52d141991b"
   },
   {
     "day": "Wednesday",
@@ -1040,7 +1045,7 @@
     "photoAlt": "JSLou JavaScript Hack Night",
     "title": "JSLou JavaScript Hack Night",
     "description": "Come hang out, chat, and work on anything JavaScript related!",
-    "id": "fb55e86c-9a1a-4add-9d38-c5fb81f448b4"
+    "id": "bbc9e29b-ddf6-4b36-9125-7893a99e566e"
   },
   {
     "firstName": "Eric",
@@ -1068,7 +1073,7 @@
     ],
     "title": "HTML5 Canvas / Javascript for cross platform browser games",
     "description": "",
-    "id": "aeb5eb4d-857a-47f9-9da0-a1a302928f97"
+    "id": "462e4182-8e97-401f-9b2a-a803e2da1d88"
   },
   {
     "firstName": "",
@@ -1086,7 +1091,7 @@
     "description": "Bring your laptop, there will not be a speaker, it will be more like our Open Hack nights but we will be working though the nodeschool lesson about Express called 'expressworks' http://nodeschool.io/#expressworks",
     "attendance": 5,
     "rsvps": 5,
-    "id": "f902f862-b8df-44f6-bbf8-5516708cdcd4"
+    "id": "80dd6914-f39c-4b3c-8972-3ab231184582"
   },
   {
     "firstName": "",
@@ -1104,7 +1109,7 @@
     "description": "Hey #Louisville! Interested in learning the basics of #JavaScript? After work tonight come by JSLou!",
     "attendance": 8,
     "rsvps": 8,
-    "id": "e9486259-e7f5-4cef-8ef8-09e3919b00bf"
+    "id": "acf20c93-b586-4c8e-85c8-b96b75abada3"
   },
   {
     "firstName": "",
@@ -1122,7 +1127,7 @@
     "description": "Hey #Louisville! Interested in learning the basics of #JavaScript? After work tonight come by JSLou!",
     "attendance": 22,
     "rsvps": 22,
-    "id": "fccd9308-cfa7-4856-b3bd-c82a13cdaaa8"
+    "id": "8a6a88d9-7084-47c3-92a5-e1a6503745a3"
   },
   {
     "day": "Wednesday",
@@ -1137,7 +1142,7 @@
     "description": "Come hang out, chat, and work on anything JavaScript related!",
     "attendance": 9,
     "rsvps": 9,
-    "id": "464fb8b3-6c76-46e9-98d4-5611059f74bf"
+    "id": "4c389e06-459e-403c-b286-28f326205fbe"
   },
   {
     "day": "Wednesday",
@@ -1152,7 +1157,7 @@
     "description": "Come hang out, chat, and work on anything JavaScript related!",
     "attendance": 8,
     "rsvps": 8,
-    "id": "8f8917e4-6be3-4e99-8fc6-a2519b8db0ec"
+    "id": "f7202a76-d20f-44ba-bcd4-aa6a1778672c"
   },
   {
     "day": "Wednesday",
@@ -1167,7 +1172,7 @@
     "description": "Come hang out, chat, and work on anything JavaScript related!",
     "attendance": 6,
     "rsvps": 6,
-    "id": "fe242bf6-02cb-465d-904b-c6666e3044a2"
+    "id": "022bbb2b-273e-441d-add4-f5f8cea65dac"
   },
   {
     "day": "Wednesday",
@@ -1182,7 +1187,7 @@
     "description": "Come hang out, chat, and work on anything JavaScript related!",
     "attendance": 9,
     "rsvps": 9,
-    "id": "ac6a47ea-c9e1-4dbd-8df1-87ed1af526e7"
+    "id": "0b40cd9c-75de-4c5f-a7be-75808a7b4f9c"
   },
   {
     "day": "Wednesday",
@@ -1197,7 +1202,7 @@
     "description": "Come hang out, chat, and work on anything JavaScript related!",
     "attendance": 5,
     "rsvps": 5,
-    "id": "bbfd5674-8315-4e11-a975-c87b67183dbb"
+    "id": "0c792e03-347b-4b3d-bd45-695d850889ac"
   },
   {
     "day": "Wednesday",
@@ -1212,7 +1217,7 @@
     "description": "Come hang out, chat, and work on anything JavaScript related!",
     "attendance": 5,
     "rsvps": 5,
-    "id": "d9511e8a-d1f6-44b5-984d-989d8a5db07a"
+    "id": "929c46f6-801d-4f66-8306-19ace033257e"
   },
   {
     "day": "Wednesday",
@@ -1227,7 +1232,7 @@
     "description": "Come hang out, chat, and work on anything JavaScript related!",
     "attendance": 6,
     "rsvps": 6,
-    "id": "27050a2a-dada-4e3a-8aff-a992255f071e"
+    "id": "622717cd-fc9e-4bd2-a16b-de45988b39c1"
   },
   {
     "day": "Wednesday",
@@ -1242,6 +1247,6 @@
     "description": "Come hang out, chat, and work on anything JavaScript related!",
     "attendance": 6,
     "rsvps": 6,
-    "id": "fc108fac-f417-4c98-a2c6-50e439550f93"
+    "id": "c8d90aa9-7b93-4766-8d83-12ddeb06a627"
   }
 ]
