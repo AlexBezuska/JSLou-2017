@@ -69,43 +69,7 @@
   src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
   integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
   crossorigin="anonymous"></script>
-  <script src="js/moment.min.js"></script>
-
-  <script>
-  $( document ).ready(function() {
-    // $("input[name*='time']").blur(function () {
-    //   moment($(this).text()).format("H:mm a");
-    // });
-    function getParameterByName(name) {
-      name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
-      var regexS = "[\\?&]" + name + "=([^&#]*)";
-      var regex = new RegExp(regexS);
-      var results = regex.exec(window.location.search);
-      if (results == null){
-        return "";
-      } else{
-        return decodeURIComponent(results[1].replace(/\+/g, " "));
-      }
-    }
-
-    var queryId = getParameterByName("id");
-
-    var $currentItem = $("tr[data-id='"+ queryId +"']");
-
-    $currentItem.addClass("success");
-
-    var container = $("#events-table-scoll-box");
-    // container.scrollTop(
-    //     scrollTo.offset().top - container.offset().top + container.scrollTop()
-    // );
-
-    // Or you can animate the scrolling:
-    container.animate({
-        scrollTop: $currentItem.offset().top - container.offset().top + container.scrollTop()
-    })
-
-  });
-  </script>
-
+  <script src="js/lib/moment.min.js"></script>
+  <script src="js/main-frontend.js"></script>
 </body>
 </html>
