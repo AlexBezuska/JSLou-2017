@@ -1,2 +1,5 @@
 upload.sh
 node_modules
+meetup-api-key.txt
+meetup.js
+data/events.json.bak

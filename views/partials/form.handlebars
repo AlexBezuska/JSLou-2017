@@ -1,22 +1,67 @@
-<form class="form-horizontal" action="http://127.0.0.1:1337/add-event" method="post">
+
+<style>
+.form-module{
+  /*max-height: 740px;
+  overflow-y: scroll;*/
+}
+</style>
+
+<form class="form-module form-horizontal" action="http://127.0.0.1:1337/manage-events/submit" method="post">
+
   {{#each addEvent}}
-    {{#if label}}
-      <div class="form-group">
-        <label for="{{@index}}" class="col-sm-4 control-label">{{label}}{{#if required}}<span class="req">*</span>{{/if}}</label>
-        <div class="col-sm-8">
-          {{#if_eq element "input"}}
-            <input type="{{type}}" class="form-control" id="{{@key}}" name="{{@key}}"/>
-          {{/if_eq}}
-          {{#if_eq element "textarea"}}
-            <textarea class="form-control" id="{{@key}}" name="{{@key}}"></textarea>
-          {{/if_eq}}
+
+  {{#if_eq type "private"}}
+   <div style="opacity:0.5;">{{label}}{{value}}</div>
+  {{else}}
+
+    {{#if_eq type "formatting"}}
+
+        {{#if_eq wrapper "start"}}
+          <div class="panel {{#if panel-type}}{{panel-type}}{{else}}panel-default{{/if}}">
+            {{#if label}}<div class="panel-heading">{{label}}</div>{{/if}}
+            <div class="panel-body">
+
+        {{else}}
+
+            </div><!-- /panel-body -->
+          </div><!-- /panel panel-default -->
+        {{/if_eq}}
+
+    {{else}}
+
+      {{#if label}}
+        <div class="form-group">
+          <label for="{{@index}}" class="col-sm-5 control-label">{{label}}{{#if required}}<span class="req"> *</span>{{/if}}
+          {{#if url}}
+          <a href="{{value}}" type="button" class="btn btn-default btn-xs" target="_blank">
+            <span class="glyphicon glyphicon-link" aria-hidden="true"></span>
+          </a>
+          {{/if}}
+          </label>
+          <div class="col-sm-7">
+            {{#if_eq element "input"}}
+              <input type="{{type}}" class="form-control" id="{{@key}}" name="{{@key}}" value="{{#if value}}{{value}}{{/if}}" {{#if required}}required{{/if}}/>
+            {{/if_eq}}
+            {{#if_eq element "textarea"}}
+              <textarea class="form-control" id="{{@key}}" name="{{@key}}">{{#if value}}{{value}}{{/if}}</textarea>
+            {{/if_eq}}
+          </div>
         </div>
-      </div>
-    {{/if}}
+      {{/if}}
+
+    {{/if_eq}}
+
+    {{/if_eq}}
+
+
+
   {{/each}}
 
+
   <button type="submit" class="btn btn-default btn-lg pull-right">
-  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add Event
-</button>
+  <span class="glyphicon glyphicon-save-file" aria-hidden="true"></span>
+  {{#if_eq state.task "create"}}Schedule Event{{/if_eq}}
+  {{#if_eq state.task "edit"}}Submit Changes{{/if_eq}}
+  </button>
 </form>
 

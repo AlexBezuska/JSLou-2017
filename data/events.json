@@ -1,26 +1,48 @@
 [
   {
-    "firstName": "",
-    "lastName": "",
-    "day": "",
-    "date": "2017-02-24",
-    "time": "",
-    "googleMapsURL": "",
-    "locationName": "",
-    "meetupURL": "",
-    "photoURL": "",
-    "photoAltText": "",
-    "title": "TEST",
-    "description": "",
+    "title": "JSLou JavaScript ⚡Lightning talks!⚡",
+    "day": "Wednesday",
+    "dateStart": "2017-02-15",
+    "timeStart": "7pm",
+    "dateEnd": "",
+    "timeEnd": "",
+    "directions": "https://www.google.com/maps?f=q&hl=en&q=612+W+Washington+St.,+Louisville,+KY+40202,+KY,+us",
+    "location": "Warp Zone Louisville",
+    "firstName": "Lightning Talks",
+    "lastName": "Series",
+    "description": "Lightning talks in the new year! Let me know if you would like to give a talk: abezuska@gmail.com ",
+    "photo": "img/hack-night-logo-wz.jpg",
+    "photoAlt": "JSLou JavaScript ⚡Lightning talks!⚡",
+    "meetup": "https://www.meetup.com/JSLouKY/events/236696682/",
     "attendance": "",
-    "rsvps": ""
+    "rsvps": "",
+    "id": "1d9b7a9e-02cd-4f9f-8df5-a2fc8139be1b"
+  },
+  {
+    "title": "JSLou JavaScript ⚡Lightning talks!⚡",
+    "day": "Wednesday",
+    "dateStart": "2017-02-15",
+    "timeStart": "7pm",
+    "dateEnd": "",
+    "timeEnd": "",
+    "directions": "https://www.google.com/maps?f=q&hl=en&q=612+W+Washington+St.,+Louisville,+KY+40202,+KY,+us",
+    "location": "Warp Zone Louisville",
+    "firstName": "Lightning Talks",
+    "lastName": "Series",
+    "description": "Lightning talks in the new year! Let me know if you would like to give a talk: abezuska@gmail.com ",
+    "photo": "img/hack-night-logo-wz.jpg",
+    "photoAlt": "JSLou JavaScript ⚡Lightning talks!⚡",
+    "meetup": "https://www.meetup.com/JSLouKY/events/236696682/",
+    "attendance": "",
+    "rsvps": "",
+    "id": "965da066-955e-4ae0-9fb0-dba8e629a8b8"
   },
   {
     "firstName": "Lightning Talks",
     "lastName": "Series",
     "day": "Wednesday",
-    "date": "2017-02-15",
-    "time": "7pm",
+    "dateStart": "2017-02-15",
+    "timeStart": "7pm",
     "directions": "https://www.google.com/maps?f=q&hl=en&q=612+W+Washington+St.,+Louisville,+KY+40202,+KY,+us",
     "location": "Warp Zone Louisville",
     "meetup": "https://www.meetup.com/JSLouKY/events/236696682/",
@@ -30,14 +52,15 @@
     "title": "JSLou JavaScript ⚡Lightning talks!⚡",
     "description": "Lightning talks in the new year! Let me know if you would like to give a talk: abezuska@gmail.com ",
     "attendance": 0,
-    "rsvps": 0
+    "rsvps": 0,
+    "id": "2367a234-287d-4346-903f-1fb7a72ce810"
   },
   {
     "firstName": "",
     "lastName": "",
     "day": "Wednesday",
-    "date": "2017-02-01",
-    "time": "7pm",
+    "dateStart": "2017-02-01",
+    "timeStart": "7pm",
     "directions": "https://www.google.com/maps?f=q&hl=en&q=612+W+Washington+St.,+Louisville,+KY+40202,+KY,+us",
     "location": "Warp Zone Louisville",
     "meetup": "https://www.meetup.com/JSLouKY/events/drlhhkywdbcb/",
@@ -47,14 +70,15 @@
     "title": "JavaScript Hack Night",
     "description": "Come hang out, chat, and work on anything JavaScript related. Be sure to bring a laptop this is a time to get things done on your existing projects not a normal structured meeting!",
     "attendance": 0,
-    "rsvps": 0
+    "rsvps": 0,
+    "id": "782ebfcc-7547-4fe6-9ece-00ce20639882"
   },
   {
     "firstName": "Josh",
     "lastName": "Greenwood",
     "day": "Wednesday",
-    "date": "2017-01-18",
-    "time": "7pm",
+    "dateStart": "2017-01-18",
+    "timeStart": "7pm",
     "directions": "https://www.google.com/maps?f=q&hl=en&q=612+W+Washington+St.,+Louisville,+KY+40202,+KY,+us",
     "location": "Warp Zone Louisville",
     "meetup": "https://www.meetup.com/JSLouKY/events/236091760/",
@@ -73,14 +97,15 @@
     "title": "Josh Greenwood - Introduction to elm",
     "description": "Check out elm here: http://elm-lang.org/  Full talk description coming soon!",
     "attendance": 0,
-    "rsvps": 0
+    "rsvps": 0,
+    "id": "dd89a63d-0a05-4345-9c9a-d357f27103a9"
   },
   {
     "firstName": "",
     "lastName": "",
     "day": "Wednesday",
-    "date": "2017-01-04",
-    "time": "7pm",
+    "dateStart": "2017-01-04",
+    "timeStart": "7pm",
     "directions": "https://www.google.com/maps?f=q&hl=en&q=612+W+Washington+St.,+Louisville,+KY+40202,+KY,+us",
     "location": "Warp Zone Louisville",
     "meetup": "https://www.meetup.com/JSLouKY/events/236395803/",
@@ -90,14 +115,15 @@
     "title": "JavaScript Hack Night",
     "description": "Come hang out, chat, and work on anything JavaScript related. Be sure to bring a laptop this is a time to get things done on your existing projects not a normal structured meeting!",
     "attendance": 11,
-    "rsvps": 13
+    "rsvps": 13,
+    "id": "b130d0b3-e259-4354-8452-685f8e842540"
   },
   {
     "firstName": "Lightning Talks",
     "lastName": "Series",
     "day": "Wednesday",
-    "date": "2016-12-21",
-    "time": "7pm",
+    "dateStart": "2016-12-21",
+    "timeStart": "7pm",
     "directions": "https://www.google.com/maps?f=q&hl=en&q=612+W+Washington+St.,+Louisville,+KY+40202,+KY,+us",
     "location": "Warp Zone Louisville",
     "meetup": "https://www.meetup.com/JSLouKY/events/231524629/",
@@ -108,14 +134,15 @@
     "title": "JSLou JavaScript ⚡Lightning talks!⚡",
     "description": "Sign up to give a talk now! email abezuska@gmail.com with the subject \"JSLOU LIGHTNING TALKS\"",
     "attendance": 11,
-    "rsvps": 11
+    "rsvps": 11,
+    "id": "613442da-299e-4d15-977e-179152b16555"
   },
   {
     "firstName": "",
     "lastName": "",
     "day": "Wednesday",
-    "date": "2016-12-07",
-    "time": "7pm",
+    "dateStart": "2016-12-07",
+    "timeStart": "7pm",
     "directions": "https://www.google.com/maps?f=q&hl=en&q=612+W+Washington+St.,+Louisville,+KY+40202,+KY,+us",
     "location": "Warp Zone Louisville",
     "meetup": "https://www.meetup.com/JSLouKY/events/231524596/",
@@ -125,14 +152,15 @@
     "title": "JSLOU JAVASCRIPT HACK NIGHT",
     "description": "Come hang out, chat, and work on anything JavaScript related. Be sure to bring a laptop this is a time to get things done on your existing projects not a normal structured meeting!",
     "attendance": 0,
-    "rsvps": 0
+    "rsvps": 0,
+    "id": "1dcc2b4c-327c-420a-843c-0b518f784ad8"
   },
   {
     "firstName": "Craig",
     "lastName": "Burton",
     "day": "Wednesday",
-    "date": "2016-11-16",
-    "time": "7pm",
+    "dateStart": "2016-11-16",
+    "timeStart": "7pm",
     "directions": "https://www.google.com/maps?f=q&hl=en&q=612+W+Washington+St.,+Louisville,+KY+40202,+KY,+us",
     "location": "Warp Zone Louisville",
     "meetup": "https://www.meetup.com/JSLouKY/events/231524623/",
@@ -160,14 +188,15 @@
     "title": "Intro to Typescript",
     "description": "TypeScript is a free and open-source programming language developed and maintained by Microsoft. It is a strict superset of JavaScript, and adds optional static typing and class-based object-oriented programming to the language.",
     "attendance": 24,
-    "rsvps": 24
+    "rsvps": 24,
+    "id": "e92effd2-07d8-4ef8-b3a2-2d32e78d38f1"
   },
   {
     "firstName": "",
     "lastName": "",
     "day": "Wednesday",
-    "date": "2016-11-02",
-    "time": "7pm",
+    "dateStart": "2016-11-02",
+    "timeStart": "7pm",
     "directions": "https://www.google.com/maps?f=q&hl=en&q=612+W+Washington+St.,+Louisville,+KY+40202,+KY,+us",
     "location": "Warp Zone Louisville",
     "meetup": "https://www.meetup.com/JSLouKY/events/231524593/",
@@ -177,14 +206,15 @@
     "title": "JSLOU JAVASCRIPT HACK NIGHT",
     "description": "Come hang out, chat, and work on anything JavaScript related. Be sure to bring a laptop this is a time to get things done on your existing projects not a normal structured meeting!",
     "attendance": 9,
-    "rsvps": 9
+    "rsvps": 9,
+    "id": "6be2d75d-8fd4-4b12-ade4-e39d68b5af19"
   },
   {
     "firstName": "Lightning Talks",
     "lastName": "Series",
     "day": "Wednesday",
-    "date": "2016-10-19",
-    "time": "7pm",
+    "dateStart": "2016-10-19",
+    "timeStart": "7pm",
     "directions": "https://www.google.com/maps?f=q&hl=en&q=612+W+Washington+St.,+Louisville,+KY+40202,+KY,+us",
     "location": "Warp Zone Louisville",
     "meetup": "https://www.meetup.com/JSLouKY/events/231524618/",
@@ -194,14 +224,15 @@
     "title": "JSLou JavaScript ⚡Lightning talks!⚡",
     "description": "Our first lightning talks session! 4 speakers will talked for 5-25 minutes each to give breief overviews of concepts of technologies. Speakers were: Craig Burton, Eric Lathrop, Ben Wiley, and Thomas Neirynck",
     "attendance": 18,
-    "rsvps": 18
+    "rsvps": 18,
+    "id": "68a96254-e6e4-46f4-a042-d032c370dffa"
   },
   {
     "firstName": "",
     "lastName": "",
     "day": "Wednesday",
-    "date": "2016-10-05",
-    "time": "7pm",
+    "dateStart": "2016-10-05",
+    "timeStart": "7pm",
     "directions": "https://www.google.com/maps?f=q&hl=en&q=612+W+Washington+St.,+Louisville,+KY+40202,+KY,+us",
     "location": "Warp Zone Louisville",
     "meetup": "https://www.meetup.com/JSLouKY/events/231524589/",
@@ -211,14 +242,15 @@
     "title": "JSLOU JAVASCRIPT HACK NIGHT",
     "description": "Come hang out, chat, and work on anything JavaScript related. Be sure to bring a laptop this is a time to get things done on your existing projects not a normal structured meeting!",
     "attendance": 5,
-    "rsvps": 5
+    "rsvps": 5,
+    "id": "1bbe3f54-2681-4be6-875b-05f6e7b3802e"
   },
   {
     "firstName": "Aaron",
     "lastName": "Johnson",
     "day": "Wednesday",
-    "date": "2016-09-21",
-    "time": "7pm",
+    "dateStart": "2016-09-21",
+    "timeStart": "7pm",
     "directions": "https://www.google.com/maps?f=q&hl=en&q=612+W+Washington+St.,+Louisville,+KY+40202,+KY,+us",
     "location": "Warp Zone Louisville",
     "meetup": "https://www.meetup.com/JSLouKY/events/231524615/",
@@ -228,14 +260,15 @@
     "title": "Javascript Promises: Useful patterns with Aaron Johnson (JSLou Learn Night)",
     "description": "A really brief introduction to asynchronous javascript code followed by a tutorial on handling async operations with ES6 Promises, and capped off with some handy-dandy tips/patterns for using Promises.",
     "attendance": 7,
-    "rsvps": 7
+    "rsvps": 7,
+    "id": "084875d3-c86e-47f1-af0f-12f761e892c3"
   },
   {
     "firstName": "",
     "lastName": "",
     "day": "Wednesday",
-    "date": "2016-09-07",
-    "time": "7pm",
+    "dateStart": "2016-09-07",
+    "timeStart": "7pm",
     "directions": "https://www.google.com/maps?f=q&hl=en&q=612+W+Washington+St.,+Louisville,+KY+40202,+KY,+us",
     "location": "Warp Zone Louisville",
     "meetup": "https://www.meetup.com/JSLouKY/events/231524584/",
@@ -245,14 +278,15 @@
     "title": "JSLOU JAVASCRIPT HACK NIGHT",
     "description": "Come hang out, chat, and work on anything JavaScript related. Be sure to bring a laptop this is a time to get things done on your existing projects not a normal structured meeting!",
     "attendance": 8,
-    "rsvps": 8
+    "rsvps": 8,
+    "id": "2d7dcfed-d5e6-4cc1-adf3-cde959c4ee5c"
   },
   {
     "firstName": "Eric",
     "lastName": "Lathrop",
     "day": "Wednesday",
-    "date": "2016-08-17",
-    "time": "7pm",
+    "dateStart": "2016-08-17",
+    "timeStart": "7pm",
     "directions": "https://www.google.com/maps?f=q&hl=en&q=612+W+Washington+St.,+Louisville,+KY+40202,+KY,+us",
     "location": "Warp Zone Louisville",
     "meetup": "http://www.meetup.com/JSLouKY/events/231524614/",
@@ -272,14 +306,15 @@
     "title": "Using browser dev tools with Eric Lathrop",
     "description": "Description coming soon ",
     "attendance": 15,
-    "rsvps": 15
+    "rsvps": 15,
+    "id": "b7bd9354-e178-4e6a-9a1c-72cff6ad1677"
   },
   {
     "firstName": "",
     "lastName": "",
     "day": "Wednesday",
-    "date": "2016-08-03",
-    "time": "7pm",
+    "dateStart": "2016-08-03",
+    "timeStart": "7pm",
     "directions": "https://www.google.com/maps?f=q&hl=en&q=612+W+Washington+St.,+Louisville,+KY+40202,+KY,+us",
     "location": "Warp Zone Louisville",
     "meetup": "http://www.meetup.com/JSLouKY/events/231524581/",
@@ -289,14 +324,15 @@
     "title": "JSLOU JAVASCRIPT HACK NIGHT",
     "description": "Come hang out, chat, and work on anything JavaScript related. Be sure to bring a laptop this is a time to get things done on your existing projects not a normal structured meeting!",
     "attendance": 8,
-    "rsvps": 8
+    "rsvps": 8,
+    "id": "d3b50711-8ccd-42cc-a1ed-5d3cdc62c140"
   },
   {
     "firstName": "",
     "lastName": "",
     "day": "Wednesday",
-    "date": "2016-07-06",
-    "time": "7pm",
+    "dateStart": "2016-07-06",
+    "timeStart": "7pm",
     "directions": "https://www.google.com/maps?f=q&hl=en&q=612+W+Washington+St.,+Louisville,+KY+40202,+KY,+us",
     "location": "Warp Zone Louisville",
     "meetup": "http://www.meetup.com/JSLouKY/events/231517583/",
@@ -306,14 +342,15 @@
     "title": "JSLOU JAVASCRIPT HACK NIGHT",
     "description": "Come hang out, chat, and work on anything JavaScript related. Be sure to bring a laptop this is a time to get things done on your existing projects not a normal structured meeting!",
     "attendance": 13,
-    "rsvps": 13
+    "rsvps": 13,
+    "id": "583556a3-8ed5-46ab-a9d5-daa1aa36cdc0"
   },
   {
     "firstName": "Alan",
     "lastName": "Blount",
     "day": "Wednesday",
-    "date": "2016-06-15",
-    "time": "7pm",
+    "dateStart": "2016-06-15",
+    "timeStart": "7pm",
     "directions": "https://www.google.com/maps?f=q&hl=en&q=612+W+Washington+St.,+Louisville,+KY+40202,+KY,+us",
     "location": "Warp Zone Louisville",
     "meetup": "http://www.meetup.com/JSLouKY/events/230761000/",
@@ -345,14 +382,15 @@
     "title": "React CDK & Storybook with Alan Blount",
     "description": "React CDK is not just another React boilerplate. It’s much more than that, and it comes with support from Kadira. With React CDK, you can focus on developing your React component or utility while React CDK takes care of all the other stuff. ",
     "attendance": 18,
-    "rsvps": 24
+    "rsvps": 24,
+    "id": "5d63ed4f-ea07-41ce-93cc-5e527a2d547d"
   },
   {
     "firstName": "",
     "lastName": "",
     "day": "Wednesday",
-    "date": "2016-06-01",
-    "time": "7pm",
+    "dateStart": "2016-06-01",
+    "timeStart": "7pm",
     "directions": "https://www.google.com/maps?f=q&hl=en&q=612+W+Washington+St.,+Louisville,+KY+40202,+KY,+us",
     "location": "Event cancelled",
     "meetup": "",
@@ -362,14 +400,15 @@
     "title": "JSLOU JAVASCRIPT HACK NIGHT",
     "description": "Come hang out, chat, and work on anything JavaScript related. Be sure to bring a laptop this is a time to get things done on your existing projects not a normal structured meeting!",
     "attendance": 6,
-    "rsvps": 6
+    "rsvps": 6,
+    "id": "4c0c2bbf-fff0-4c74-b8f7-3ff53cbbbf55"
   },
   {
     "firstName": "",
     "lastName": "",
     "day": "Wednesday",
-    "date": "2016-06-01",
-    "time": "7pm",
+    "dateStart": "2016-06-01",
+    "timeStart": "7pm",
     "directions": "https://www.google.com/maps?f=q&hl=en&q=612+W+Washington+St.,+Louisville,+KY+40202,+KY,+us",
     "location": "Event cancelled",
     "meetup": "",
@@ -379,14 +418,15 @@
     "title": "JSLOU JAVASCRIPT HACK NIGHT",
     "description": "Come hang out, chat, and work on anything JavaScript related. Be sure to bring a laptop this is a time to get things done on your existing projects not a normal structured meeting!",
     "attendance": 6,
-    "rsvps": 6
+    "rsvps": 6,
+    "id": "af7a12d4-4eb8-4dea-9ea5-f3614c00fc2d"
   },
   {
     "firstName": "",
     "lastName": "",
     "day": "Wednesday",
-    "date": "2016-05-18",
-    "time": "7pm",
+    "dateStart": "2016-05-18",
+    "timeStart": "7pm",
     "directions": "https://www.google.com/maps?f=q&hl=en&q=612+W+Washington+St.,+Louisville,+KY+40202,+KY,+us",
     "location": "Event cancelled",
     "meetup": "",
@@ -396,14 +436,15 @@
     "title": "Learn Night Cancelled",
     "description": "Cancelled - sorry for the inconvenience.",
     "attendance": 0,
-    "rsvps": 0
+    "rsvps": 0,
+    "id": "b5e333b7-e924-4741-b472-f224c211c42b"
   },
   {
     "firstName": "",
     "lastName": "",
     "day": "Wednesday",
-    "date": "2016-05-04",
-    "time": "7pm",
+    "dateStart": "2016-05-04",
+    "timeStart": "7pm",
     "directions": "https://www.google.com/maps?f=q&hl=en&q=612+W+Washington+St.,+Louisville,+KY+40202,+KY,+us",
     "location": "Event cancelled",
     "meetup": "http://www.meetup.com/JSLouKY/events/229107880/",
@@ -413,14 +454,15 @@
     "title": "HACK NIGHT Cancelled",
     "description": "Cancelled - sorry for the inconvenience.",
     "attendance": 0,
-    "rsvps": 0
+    "rsvps": 0,
+    "id": "66c39170-568e-41c4-8081-7a3351a1798f"
   },
   {
     "firstName": "Craig",
     "lastName": "Burton",
     "day": "Wednesday",
-    "date": "2016-04-20",
-    "time": "7pm",
+    "dateStart": "2016-04-20",
+    "timeStart": "7pm",
     "directions": "https://www.google.com/maps?f=q&hl=en&q=612+W+Washington+St.,+Louisville,+KY+40202,+KY,+us",
     "location": "Warp Zone Louisville",
     "meetup": "http://www.meetup.com/JSLouKY/events/229107295/",
@@ -447,14 +489,15 @@
     "title": "Intro to React and Redux",
     "description": "React has been gaining popularity in the web development arena, and is quickly becoming one of the most popular JavaScript view frameworks for new projects. This talk will introduce you to the core concepts of React, as well as Redux, an amazing library for handling all of the application state for our React application.",
     "attendance": 28,
-    "rsvps": 28
+    "rsvps": 28,
+    "id": "75932ce5-683f-4be2-83ed-b747728782e5"
   },
   {
     "firstName": "",
     "lastName": "",
     "day": "Wednesday",
-    "date": "2016-04-06",
-    "time": "7pm",
+    "dateStart": "2016-04-06",
+    "timeStart": "7pm",
     "directions": "https://www.google.com/maps?f=q&hl=en&q=612+W+Washington+St.,+Louisville,+KY+40202,+KY,+us",
     "location": "Warp Zone Louisville",
     "meetup": "http://www.meetup.com/JSLouKY/events/228345936/",
@@ -464,14 +507,15 @@
     "title": "JSLOU JAVASCRIPT HACK NIGHT",
     "description": "Come hang out, chat, and work on anything JavaScript related. Be sure to bring a laptop this is a time to get things done on your existing projects not a normal structured meeting!",
     "attendance": 12,
-    "rsvps": 12
+    "rsvps": 12,
+    "id": "b9bc96c4-fcef-41eb-870b-1cb3df5c10ab"
   },
   {
     "firstName": "Ben",
     "lastName": "Wiley",
     "day": "Wednesday",
-    "date": "2016-03-02",
-    "time": "7pm",
+    "dateStart": "2016-03-02",
+    "timeStart": "7pm",
     "directions": "https://www.google.com/maps?f=q&hl=en&q=612+W+Washington+St.,+Louisville,+KY+40202,+KY,+us",
     "location": "Warp Zone Louisville",
     "meetup": "http://www.meetup.com/JSLouKY/events/228305928/",
@@ -481,14 +525,15 @@
     "title": "JSLOU WORKSHOP: FUNCTIONAL JAVASCRIPT LED BY BEN WILEY",
     "description": "Join JavaScripters from around Louisville Wednesday, March 2nd, and learn to write functional JavaScript like a pro! You'll be able to work at your own pace, and get your hands dirty tackling a series of challenges accessible and fun for JavaScript beginners and veterans alike.",
     "attendance": 19,
-    "rsvps": 19
+    "rsvps": 19,
+    "id": "ee7d6771-2d0c-4f44-8718-c69c20d39ac7"
   },
   {
     "firstName": "Adam",
     "lastName": "Bell",
     "day": "Wednesday",
-    "date": "2016-02-17",
-    "time": "7pm",
+    "dateStart": "2016-02-17",
+    "timeStart": "7pm",
     "directions": "https://www.google.com/maps?f=q&hl=en&q=612+W+Washington+St.,+Louisville,+KY+40202,+KY,+us",
     "location": "Warp Zone Louisville",
     "meetup": "http://www.meetup.com/JSLouKY/events/227280742/",
@@ -507,14 +552,15 @@
     "title": "\"Putting it all together\" - a secure deployment ready NodeJs crud app",
     "description": "I will demonstrate how to build and end to end NodeJS webapp including authentication, client side validation, and logging. I will be using the following technologies for the discussion and demonstration: Nodejs, Express, PassportJS, Mongoose, Angular, and Bootstrap. I will also demonstrate how to use the mongoose schema and Angulars ngMessages to build client side validations.",
     "attendance": 9,
-    "rsvps": 9
+    "rsvps": 9,
+    "id": "1646911b-5748-4b98-b5df-1cac13482b14"
   },
   {
     "firstName": "",
     "lastName": "",
     "day": "Wednesday",
-    "date": "2016-02-03",
-    "time": "7pm",
+    "dateStart": "2016-02-03",
+    "timeStart": "7pm",
     "directions": "https://www.google.com/maps?f=q&hl=en&q=612+W+Washington+St.,+Louisville,+KY+40202,+KY,+us",
     "location": "Warp Zone Louisville",
     "meetup": "http://www.meetup.com/JSLouKY/events/drlhhkyvdbfb/",
@@ -524,14 +570,15 @@
     "title": "JSLOU JAVASCRIPT HACK NIGHT",
     "description": "Come hang out, chat, and work on anything JavaScript related. Be sure to bring a laptop this is a time to get things done on your existing projects not a normal structured meeting!",
     "attendance": 10,
-    "rsvps": 10
+    "rsvps": 10,
+    "id": "9bc365cc-1bcd-4abb-a826-760931a984fe"
   },
   {
     "firstName": "",
     "lastName": "",
     "day": "Wednesday",
-    "date": "2016-01-20",
-    "time": "7pm",
+    "dateStart": "2016-01-20",
+    "timeStart": "7pm",
     "directions": "https://www.google.com/maps/place/VIA+Studio/@38.252457,-85.739881,17z/data=!3m1!4b1!4m2!3m1!1s0x886972dec5cc9407:0xb6df1269286cc200?hl=en",
     "location": "Via Studio",
     "meetup": "http://www.meetup.com/JSLouKY/events/dnlhhkyvcbbc/",
@@ -541,14 +588,15 @@
     "title": "JSLOU JAVASCRIPT Learn Night",
     "description": "Cancelled due to weather",
     "attendance": 0,
-    "rsvps": 0
+    "rsvps": 0,
+    "id": "9b237929-ed33-4bdc-958a-ba6bfbcd1eca"
   },
   {
     "firstName": "",
     "lastName": "",
     "day": "Wednesday",
-    "date": "2016-01-06",
-    "time": "7pm",
+    "dateStart": "2016-01-06",
+    "timeStart": "7pm",
     "directions": "http://maps.google.com/maps?f=q&hl=en&q=204+South+Floyd+Street%2C+Louisville%2C+KY%2C+us",
     "location": "iHub",
     "meetup": "http://www.meetup.com/JSLouKY/events/226756440/",
@@ -558,14 +606,15 @@
     "title": "JSLOU JAVASCRIPT HACK NIGHT",
     "description": "",
     "attendance": 8,
-    "rsvps": 8
+    "rsvps": 8,
+    "id": "5dbd902e-41b6-4c64-b77d-bb31d5de3ffd"
   },
   {
     "firstName": "Matthew",
     "lastName": "Phillips",
     "day": "Wednesday",
-    "date": "2015-12-16",
-    "time": "7pm",
+    "dateStart": "2015-12-16",
+    "timeStart": "7pm",
     "directions": "https://www.google.com/maps/place/VIA+Studio/@38.252457,-85.739881,17z/data=!3m1!4b1!4m2!3m1!1s0x886972dec5cc9407:0xb6df1269286cc200?hl=en",
     "location": "Via Studio",
     "meetup": "http://www.meetup.com/JSLouKY/events/224729947/",
@@ -585,14 +634,15 @@
     "title": "Build the fastest single page applications with DoneJS",
     "description": "Learn how to build the fastest single page applications with DoneJS (donejs.com). This talk details some most important performance techniques used in single page applications like: server side rendering, progressively loading optimized bundles, and use of content delivery networks. We will discover how DoneJS solves these problems while building a simple real-time chat application.",
     "attendance": 25,
-    "rsvps": 25
+    "rsvps": 25,
+    "id": "7b9842da-2042-4924-99ee-bd6c39072753"
   },
   {
     "firstName": "",
     "lastName": "",
     "day": "Wednesday",
-    "date": "2015-12-02",
-    "time": "7pm",
+    "dateStart": "2015-12-02",
+    "timeStart": "7pm",
     "directions": "http://maps.google.com/maps?f=q&hl=en&q=204+South+Floyd+Street%2C+Louisville%2C+KY%2C+us",
     "location": "iHub",
     "meetup": "http://www.meetup.com/JSLouKY/events/225914889/",
@@ -602,14 +652,15 @@
     "title": "JSLOU JAVASCRIPT HACK NIGHT",
     "description": "",
     "attendance": 9,
-    "rsvps": 10
+    "rsvps": 10,
+    "id": "aaa8be86-1170-4118-a8dc-55cac3d88e98"
   },
   {
     "firstName": "Alex",
     "lastName": "Bezuska",
     "day": "Wednesday",
-    "date": "2015-11-18",
-    "time": "7pm",
+    "dateStart": "2015-11-18",
+    "timeStart": "7pm",
     "directions": "https://www.google.com/maps/place/VIA+Studio/@38.252457,-85.739881,17z/data=!3m1!4b1!4m2!3m1!1s0x886972dec5cc9407:0xb6df1269286cc200?hl=en",
     "location": "Via Studio",
     "meetup": "http://www.meetup.com/JSLouKY/events/225914873/",
@@ -636,14 +687,15 @@
     "title": "No Shave November with Handlebars.js",
     "description": "Learn how building templates using Handlebars can keep you from repeating yourself and make your HTML smarter. I will cover both front-end handlebars usage, and back-end templating with Node.js",
     "attendance": 28,
-    "rsvps": 28
+    "rsvps": 28,
+    "id": "cb2232ea-af4b-4310-96ac-448f41832855"
   },
   {
     "firstName": "",
     "lastName": "",
     "day": "Wednesday",
-    "date": "2015-03-18",
-    "time": "7pm",
+    "dateStart": "2015-03-18",
+    "timeStart": "7pm",
     "directions": "https://www.google.com/maps/place/VIA+Studio/@38.252457,-85.739881,17z/data=!3m1!4b1!4m2!3m1!1s0x886972dec5cc9407:0xb6df1269286cc200?hl=en",
     "location": "Via Studio",
     "meetup": "http://www.meetup.com/JSLouKY/events/220586808/",
@@ -653,14 +705,15 @@
     "title": "",
     "description": "",
     "attendance": 13,
-    "rsvps": 13
+    "rsvps": 13,
+    "id": "234eea62-a327-49a4-a09d-3f9942a2a82c"
   },
   {
     "firstName": "CLAYTON",
     "lastName": "HUNT",
     "day": "Wednesday",
-    "date": "2015-10-21",
-    "time": "7pm",
+    "dateStart": "2015-10-21",
+    "timeStart": "7pm",
     "directions": "https://www.google.com/maps/place/VIA+Studio/@38.252457,-85.739881,17z/data=!3m1!4b1!4m2!3m1!1s0x886972dec5cc9407:0xb6df1269286cc200?hl=en",
     "location": "Via Studio",
     "meetup": "http://www.meetup.com/JSLouKY/events/225357064/",
@@ -682,12 +735,13 @@
     "description": "Would you like to never again be bothered by 'this'? Learn the pitfalls of JavaScript's 'this' keyword and the ways to avoid the problem. Then, master 'this' by bending it to your will with the dark arts of call, apply, and bind.",
     "attendance": 18,
     "rsvps": 23,
-    "presentation": "https://github.com/ClaytonHunt/Talks/tree/master/MakingThisGoAway"
+    "presentation": "https://github.com/ClaytonHunt/Talks/tree/master/MakingThisGoAway",
+    "id": "8b979de5-cb4e-4744-b0f0-96851c2ca655"
   },
   {
     "day": "Wednesday",
-    "date": "2015-11-04",
-    "time": "7pm",
+    "dateStart": "2015-11-04",
+    "timeStart": "7pm",
     "directions": "https://www.google.com/maps?f=q&hl=en&q=204+South+Floyd+Street,+Louisville,+KY,+us",
     "location": "iHub",
     "meetup": "https://www.meetup.com/JSLouKY/events/225914861/",
@@ -696,12 +750,13 @@
     "title": "JSLou JavaScript Hack Night",
     "description": "Come hang out, chat, and work on anything JavaScript related!",
     "attendance": 9,
-    "rsvps": 9
+    "rsvps": 9,
+    "id": "b6d43e15-1cd3-4ebd-b3e0-1d06a65049df"
   },
   {
     "day": "Wednesday",
-    "date": "2015-10-07",
-    "time": "7pm",
+    "dateStart": "2015-10-07",
+    "timeStart": "7pm",
     "directions": "https://www.google.com/maps?f=q&hl=en&q=204+South+Floyd+Street,+Louisville,+KY,+us",
     "location": "iHub",
     "meetup": "http://www.meetup.com/JSLouKY/events/225437945/",
@@ -710,12 +765,13 @@
     "title": "JSLou JavaScript Hack Night",
     "description": "Come hang out, chat, and work on anything JavaScript related!",
     "attendance": 9,
-    "rsvps": 9
+    "rsvps": 9,
+    "id": "78a2e59f-78db-4a16-bdec-90d01b8fc07c"
   },
   {
     "day": "Wednesday",
-    "date": "2015-09-02",
-    "time": "7pm",
+    "dateStart": "2015-09-02",
+    "timeStart": "7pm",
     "directions": "https://www.google.com/maps?f=q&hl=en&q=204+South+Floyd+Street,+Louisville,+KY,+us",
     "location": "iHub",
     "meetup": "http://www.meetup.com/JSLouKY/events/224420738/",
@@ -724,12 +780,13 @@
     "title": "JSLou JavaScript Hack Night",
     "description": "Come hang out, chat, and work on anything JavaScript related!",
     "attendance": 8,
-    "rsvps": 8
+    "rsvps": 8,
+    "id": "3abbb669-379f-4725-a35f-01ece3ec2f20"
   },
   {
     "day": "Wednesday",
-    "date": "2015-08-05",
-    "time": "7pm",
+    "dateStart": "2015-08-05",
+    "timeStart": "7pm",
     "directions": "https://www.google.com/maps?f=q&hl=en&q=204+South+Floyd+Street,+Louisville,+KY,+us",
     "location": "iHub",
     "meetup": "http://www.meetup.com/JSLouKY/events/223752590/",
@@ -738,12 +795,13 @@
     "title": "JSLou JavaScript Hack Night",
     "description": "Come hang out, chat, and work on anything JavaScript related!",
     "attendance": 19,
-    "rsvps": 19
+    "rsvps": 19,
+    "id": "0469d883-bc87-4dad-a51c-92825ab0770f"
   },
   {
     "day": "Wednesday",
-    "date": "2015-07-01",
-    "time": "7pm",
+    "dateStart": "2015-07-01",
+    "timeStart": "7pm",
     "directions": "https://www.google.com/maps?f=q&hl=en&q=204+South+Floyd+Street,+Louisville,+KY,+us",
     "location": "iHub",
     "meetup": "http://www.meetup.com/JSLouKY/events/223006350/",
@@ -752,14 +810,15 @@
     "title": "JSLou JavaScript Hack Night",
     "description": "Come hang out, chat, and work on anything JavaScript related!",
     "attendance": 5,
-    "rsvps": 5
+    "rsvps": 5,
+    "id": "cc135abc-21b0-4b61-add5-9f40d80b2afc"
   },
   {
     "firstName": "",
     "lastName": "",
     "day": "Wednesday",
-    "date": "2015-06-03",
-    "time": "7pm",
+    "dateStart": "2015-06-03",
+    "timeStart": "7pm",
     "directions": "https://www.google.com/maps/place/VIA+Studio/@38.252457,-85.739881,17z/data=!3m1!4b1!4m2!3m1!1s0x886972dec5cc9407:0xb6df1269286cc200?hl=en",
     "location": "Via Studio",
     "meetup": "http://www.meetup.com/JSLouKY/events/222593172/",
@@ -768,14 +827,15 @@
     "title": "JSLou JavaScript Hack Night",
     "description": "Come hang out, chat, and work on anything JavaScript related!",
     "attendance": 5,
-    "rsvps": 5
+    "rsvps": 5,
+    "id": "d161bf46-70e4-482b-af81-98dd189005f2"
   },
   {
     "firstName": "",
     "lastName": "",
     "day": "Wednesday",
-    "date": "2015-07-15",
-    "time": "7pm",
+    "dateStart": "2015-07-15",
+    "timeStart": "7pm",
     "directions": "https://www.google.com/maps/place/VIA+Studio/@38.252457,-85.739881,17z/data=!3m1!4b1!4m2!3m1!1s0x886972dec5cc9407:0xb6df1269286cc200?hl=en",
     "location": "Via Studio",
     "meetup": "http://www.meetup.com/JSLouKY/events/223022587/",
@@ -784,14 +844,15 @@
     "title": "JSLou JavaScript Hack Night",
     "description": "Come hang out, chat, and work on anything JavaScript related!",
     "attendance": 23,
-    "rsvps": 23
+    "rsvps": 23,
+    "id": "53a111f6-78ad-4255-b873-16585cc10f4f"
   },
   {
     "firstName": "",
     "lastName": "",
     "day": "Wednesday",
-    "date": "2015-06-17",
-    "time": "7pm",
+    "dateStart": "2015-06-17",
+    "timeStart": "7pm",
     "directions": "https://www.google.com/maps/place/VIA+Studio/@38.252457,-85.739881,17z/data=!3m1!4b1!4m2!3m1!1s0x886972dec5cc9407:0xb6df1269286cc200?hl=en",
     "location": "Via Studio",
     "meetup": "http://www.meetup.com/JSLouKY/events/222840419/",
@@ -800,14 +861,15 @@
     "title": "JSLou JavaScript Hack Night",
     "description": "Come hang out, chat, and work on anything JavaScript related!",
     "attendance": 12,
-    "rsvps": 12
+    "rsvps": 12,
+    "id": "1c314e28-07a8-4a55-8363-041d91b585fc"
   },
   {
     "firstName": "Craig",
     "lastName": "Clemons",
     "day": "Wednesday",
-    "date": "2015-09-16",
-    "time": "7pm",
+    "dateStart": "2015-09-16",
+    "timeStart": "7pm",
     "directions": "https://www.google.com/maps/place/VIA+Studio/@38.252457,-85.739881,17z/data=!3m1!4b1!4m2!3m1!1s0x886972dec5cc9407:0xb6df1269286cc200?hl=en",
     "location": "Via Studio",
     "meetup": "http://www.meetup.com/JSLouKY/events/224420751/",
@@ -828,14 +890,15 @@
     "title": "Functional Concepts in Javascript",
     "description": "Introduction to functional concepts in javascript using map, reduce, and filter",
     "attendance": 25,
-    "rsvps": 25
+    "rsvps": 25,
+    "id": "bc6c21bc-8252-4d7a-8f85-b37ba6e0d482"
   },
   {
     "firstName": "Matthew",
     "lastName": "Phillips",
     "day": "Wednesday",
-    "date": "2015-05-20",
-    "time": "7pm",
+    "dateStart": "2015-05-20",
+    "timeStart": "7pm",
     "directions": "https://www.google.com/maps/place/VIA+Studio/@38.252457,-85.739881,17z/data=!3m1!4b1!4m2!3m1!1s0x886972dec5cc9407:0xb6df1269286cc200?hl=en",
     "location": "Via Studio",
     "meetup": "http://www.meetup.com/JSLouKY/events/222180538/",
@@ -866,14 +929,15 @@
     "title": "Modules in the Browser: Finally",
     "description": "ECMAScript 6, the upcoming new standard for JavaScript, includes modules for the first time. We’ll go over the history of using modules in the browser, from simple script tags, to module loaders like RequireJS and Browserify, and then look at the upcoming Loader standard and how you can hack it to provide additional capabilities to your workflow.",
     "attendance": 16,
-    "rsvps": 16
+    "rsvps": 16,
+    "id": "3473098d-6fcf-4ade-8b1c-796f6dcd1ada"
   },
   {
     "firstName": "Michael",
     "lastName": "Yared",
     "day": "Wednesday",
-    "date": "2015-04-15",
-    "time": "7pm",
+    "dateStart": "2015-04-15",
+    "timeStart": "7pm",
     "directions": "https://www.google.com/maps/place/VIA+Studio/@38.252457,-85.739881,17z/data=!3m1!4b1!4m2!3m1!1s0x886972dec5cc9407:0xb6df1269286cc200?hl=en",
     "location": "Via Studio",
     "meetup": "http://www.meetup.com/JSLouKY/events/221156847/",
@@ -899,14 +963,15 @@
     "title": "Intro to Ember and Ember CLI",
     "description": "Ruby / Rails / Ember / JavaScript developer for healthcare & scientific companies. Husband & dad who enjoys traveling, being outside, startups & yellow labs.",
     "attendance": 12,
-    "rsvps": 12
+    "rsvps": 12,
+    "id": "f92eb7c1-cd73-4d2d-a34d-b1dfe58e713c"
   },
   {
     "firstName": "Ed",
     "lastName": "Charbeneau",
     "day": "Wednesday",
-    "date": "2014-05-14",
-    "time": "7pm",
+    "dateStart": "2014-05-14",
+    "timeStart": "7pm",
     "directions": "https://www.google.com/maps/place/velocity+indiana/data=!4m2!3m1!1s0x0:0xd7302d22d4740a30?sa=X&ved=0CCQQrwswAGoVChMI0J_uvazKyAIVRsuACh0ypwO3",
     "location": "Velocity Indiana",
     "photo": "img/speakers/ed-charbeneau.jpg",
@@ -926,14 +991,15 @@
     "title": "",
     "description": "",
     "home": "Louisville, Kentucky",
-    "bio": ""
+    "bio": "",
+    "id": "d9cb70e1-31d9-4475-9642-3d2e5a58fade"
   },
   {
     "firstName": "Matt",
     "lastName": "Tannahill",
     "day": "Wednesday",
-    "date": "2014-05-14",
-    "time": "7pm",
+    "dateStart": "2014-05-14",
+    "timeStart": "7pm",
     "directions": "https://www.google.com/maps/place/VIA+Studio/@38.252457,-85.739881,17z/data=!3m1!4b1!4m2!3m1!1s0x886972dec5cc9407:0xb6df1269286cc200?hl=en",
     "location": "Via Studio",
     "photo": "img/speakers/matt-tannahill.png",
@@ -948,14 +1014,15 @@
     "title": "",
     "description": "",
     "home": "Louisville, Kentucky",
-    "bio": ""
+    "bio": "",
+    "id": "9471b0a0-ed62-422f-80c1-1af712f38f23"
   },
   {
     "firstName": "William",
     "lastName": "Burke",
     "day": "Wednesday",
-    "date": "2014-04-15",
-    "time": "7pm",
+    "dateStart": "2014-04-15",
+    "timeStart": "7pm",
     "directions": "",
     "location": "LVL1 Hackerspace",
     "photo": "img/speakers/william-burke.jpg",
@@ -980,14 +1047,15 @@
     "title": "Intro to Node.js",
     "description": "",
     "home": "Louisville, Kentucky",
-    "bio": ""
+    "bio": "",
+    "id": "3732bf65-482d-4341-bfb3-1c1ac93478af"
   },
   {
     "firstName": "Thomas Neirynck &",
     "lastName": "Dannie Gregoire",
     "day": "Wednesday",
-    "date": "2014-03-20",
-    "time": "7pm",
+    "dateStart": "2014-03-20",
+    "timeStart": "7pm",
     "directions": "",
     "location": "LVL1 Hackerspace",
     "photo": "img/hack-night-logo.png",
@@ -1002,25 +1070,27 @@
     "title": "Leaflet & Greasemonkey",
     "description": "'A developer API for adding maps to a web app.' and 'Extending enterprise applications with javascript and Greasemonkey.'",
     "home": "Louisville, Kentucky",
-    "bio": ""
+    "bio": "",
+    "id": "16dde0d6-8708-4fd6-8337-5baba7e49cb8"
   },
   {
     "day": "Wednesday",
-    "date": "2014-03-05",
-    "time": "7pm",
+    "dateStart": "2014-03-05",
+    "timeStart": "7pm",
     "directions": "https://www.google.com/maps?f=q&hl=en&q=204+South+Floyd+Street,+Louisville,+KY,+us",
     "location": "iHub",
     "photo": "img/hack-night-logo.png",
     "photoAlt": "JSLou JavaScript Hack Night",
     "title": "JSLou JavaScript Hack Night",
-    "description": "Come hang out, chat, and work on anything JavaScript related!"
+    "description": "Come hang out, chat, and work on anything JavaScript related!",
+    "id": "fb55e86c-9a1a-4add-9d38-c5fb81f448b4"
   },
   {
     "firstName": "Eric",
     "lastName": "Lathrop",
     "day": "Wednesday",
-    "date": "2014-01-16",
-    "time": "7pm",
+    "dateStart": "2014-01-16",
+    "timeStart": "7pm",
     "directions": "http://lvl1.org",
     "location": "LVL1 Hackerspace",
     "photo": "img/speakers/eric-lathrop.jpg",
@@ -1040,14 +1110,15 @@
       }
     ],
     "title": "HTML5 Canvas / Javascript for cross platform browser games",
-    "description": ""
+    "description": "",
+    "id": "aeb5eb4d-857a-47f9-9da0-a1a302928f97"
   },
   {
     "firstName": "",
     "lastName": "",
     "day": "Wednesday",
-    "date": "2014-08-20",
-    "time": "7pm",
+    "dateStart": "2014-08-20",
+    "timeStart": "7pm",
     "directions": "https://www.google.com/maps?f=q&hl=en&q=223+S.+Clay+Street,+Louisville,+KY,+40202,+us",
     "location": "Via Studio",
     "meetup": "http://www.meetup.com/JSLouKY/events/199716072/",
@@ -1057,14 +1128,15 @@
     "title": "JSLou JavaScript Group Nodeschool on ExpressJS",
     "description": "Bring your laptop, there will not be a speaker, it will be more like our Open Hack nights but we will be working though the nodeschool lesson about Express called 'expressworks' http://nodeschool.io/#expressworks",
     "attendance": 5,
-    "rsvps": 5
+    "rsvps": 5,
+    "id": "f902f862-b8df-44f6-bbf8-5516708cdcd4"
   },
   {
     "firstName": "",
     "lastName": "",
     "day": "Wednesday",
-    "date": "2014-09-03",
-    "time": "7pm",
+    "dateStart": "2014-09-03",
+    "timeStart": "7pm",
     "directions": "",
     "location": "iHub",
     "meetup": "http://www.meetup.com/JSLouKY/events/199716302/",
@@ -1074,14 +1146,15 @@
     "title": "Intro to JavaScript Night!",
     "description": "Hey #Louisville! Interested in learning the basics of #JavaScript? After work tonight come by JSLou!",
     "attendance": 8,
-    "rsvps": 8
+    "rsvps": 8,
+    "id": "e9486259-e7f5-4cef-8ef8-09e3919b00bf"
   },
   {
     "firstName": "",
     "lastName": "",
     "day": "Wednesday",
-    "date": "2014-09-17",
-    "time": "7pm",
+    "dateStart": "2014-09-17",
+    "timeStart": "7pm",
     "directions": "",
     "location": "Via Studio",
     "meetup": "http://www.meetup.com/JSLouKY/events/202291932/",
@@ -1091,12 +1164,13 @@
     "title": "Intro to JavaScript Night!",
     "description": "Hey #Louisville! Interested in learning the basics of #JavaScript? After work tonight come by JSLou!",
     "attendance": 22,
-    "rsvps": 22
+    "rsvps": 22,
+    "id": "fccd9308-cfa7-4856-b3bd-c82a13cdaaa8"
   },
   {
     "day": "Wednesday",
-    "date": "2014-10-01",
-    "time": "7pm",
+    "dateStart": "2014-10-01",
+    "timeStart": "7pm",
     "directions": "https://www.google.com/maps?f=q&hl=en&q=204+South+Floyd+Street,+Louisville,+KY,+us",
     "location": "iHub",
     "meetup": "http://www.meetup.com/JSLouKY/events/206709212/",
@@ -1105,12 +1179,13 @@
     "title": "JSLou JavaScript Hack Night",
     "description": "Come hang out, chat, and work on anything JavaScript related!",
     "attendance": 9,
-    "rsvps": 9
+    "rsvps": 9,
+    "id": "464fb8b3-6c76-46e9-98d4-5611059f74bf"
   },
   {
     "day": "Wednesday",
-    "date": "2014-11-05",
-    "time": "7pm",
+    "dateStart": "2014-11-05",
+    "timeStart": "7pm",
     "directions": "https://www.google.com/maps?f=q&hl=en&q=204+South+Floyd+Street,+Louisville,+KY,+us",
     "location": "iHub",
     "meetup": "http://www.meetup.com/JSLouKY/events/210714582/",
@@ -1119,12 +1194,13 @@
     "title": "JSLou JavaScript Hack Night",
     "description": "Come hang out, chat, and work on anything JavaScript related!",
     "attendance": 8,
-    "rsvps": 8
+    "rsvps": 8,
+    "id": "8f8917e4-6be3-4e99-8fc6-a2519b8db0ec"
   },
   {
     "day": "Wednesday",
-    "date": "2014-12-03",
-    "time": "7pm",
+    "dateStart": "2014-12-03",
+    "timeStart": "7pm",
     "directions": "https://www.google.com/maps?f=q&hl=en&q=204+South+Floyd+Street,+Louisville,+KY,+us",
     "location": "iHub",
     "meetup": "http://www.meetup.com/JSLouKY/events/218934663/",
@@ -1133,12 +1209,13 @@
     "title": "JSLou JavaScript Hack Night",
     "description": "Come hang out, chat, and work on anything JavaScript related!",
     "attendance": 6,
-    "rsvps": 6
+    "rsvps": 6,
+    "id": "fe242bf6-02cb-465d-904b-c6666e3044a2"
   },
   {
     "day": "Wednesday",
-    "date": "2015-01-07",
-    "time": "7pm",
+    "dateStart": "2015-01-07",
+    "timeStart": "7pm",
     "directions": "https://www.google.com/maps?f=q&hl=en&q=204+South+Floyd+Street,+Louisville,+KY,+us",
     "location": "iHub",
     "meetup": "http://www.meetup.com/JSLouKY/events/219376401/",
@@ -1147,12 +1224,13 @@
     "title": "JSLou JavaScript Hack Night",
     "description": "Come hang out, chat, and work on anything JavaScript related!",
     "attendance": 9,
-    "rsvps": 9
+    "rsvps": 9,
+    "id": "ac6a47ea-c9e1-4dbd-8df1-87ed1af526e7"
   },
   {
     "day": "Wednesday",
-    "date": "2015-02-04",
-    "time": "7pm",
+    "dateStart": "2015-02-04",
+    "timeStart": "7pm",
     "directions": "https://www.google.com/maps?f=q&hl=en&q=204+South+Floyd+Street,+Louisville,+KY,+us",
     "location": "iHub",
     "meetup": "http://www.meetup.com/JSLouKY/events/220146045/",
@@ -1161,12 +1239,13 @@
     "title": "JSLou JavaScript Hack Night",
     "description": "Come hang out, chat, and work on anything JavaScript related!",
     "attendance": 5,
-    "rsvps": 5
+    "rsvps": 5,
+    "id": "bbfd5674-8315-4e11-a975-c87b67183dbb"
   },
   {
     "day": "Wednesday",
-    "date": "2015-03-04",
-    "time": "7pm",
+    "dateStart": "2015-03-04",
+    "timeStart": "7pm",
     "directions": "https://www.google.com/maps?f=q&hl=en&q=204+South+Floyd+Street,+Louisville,+KY,+us",
     "location": "iHub",
     "meetup": "http://www.meetup.com/JSLouKY/events/220505117/",
@@ -1175,12 +1254,13 @@
     "title": "JSLou JavaScript Hack Night",
     "description": "Come hang out, chat, and work on anything JavaScript related!",
     "attendance": 5,
-    "rsvps": 5
+    "rsvps": 5,
+    "id": "d9511e8a-d1f6-44b5-984d-989d8a5db07a"
   },
   {
     "day": "Wednesday",
-    "date": "2015-04-01",
-    "time": "7pm",
+    "dateStart": "2015-04-01",
+    "timeStart": "7pm",
     "directions": "https://www.google.com/maps?f=q&hl=en&q=204+South+Floyd+Street,+Louisville,+KY,+us",
     "location": "iHub",
     "meetup": "http://www.meetup.com/JSLouKY/events/220866924/",
@@ -1189,12 +1269,13 @@
     "title": "JSLou JavaScript Hack Night",
     "description": "Come hang out, chat, and work on anything JavaScript related!",
     "attendance": 6,
-    "rsvps": 6
+    "rsvps": 6,
+    "id": "27050a2a-dada-4e3a-8aff-a992255f071e"
   },
   {
     "day": "Wednesday",
-    "date": "2015-05-06",
-    "time": "7pm",
+    "dateStart": "2015-05-06",
+    "timeStart": "7pm",
     "directions": "https://www.google.com/maps?f=q&hl=en&q=204+South+Floyd+Street,+Louisville,+KY,+us",
     "location": "iHub",
     "meetup": "http://www.meetup.com/JSLouKY/events/221962898/",
@@ -1203,6 +1284,7 @@
     "title": "JSLou JavaScript Hack Night",
     "description": "Come hang out, chat, and work on anything JavaScript related!",
     "attendance": 6,
-    "rsvps": 6
+    "rsvps": 6,
+    "id": "fc108fac-f417-4c98-a2c6-50e439550f93"
   }
 ]

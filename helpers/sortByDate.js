@@ -1,9 +1,9 @@
 var comparisons = {
   ascending : function(a,b){
-    return Date.parse(a.date) - Date.parse(b.date);
+    return Date.parse(a.dateStart) - Date.parse(b.dateStart);
   },
   descending : function(a,b){
-    return Date.parse(b.date) - Date.parse(a.date);
+    return Date.parse(b.dateStart) - Date.parse(a.dateStart);
   }
 }
 

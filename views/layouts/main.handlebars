@@ -32,7 +32,7 @@
 
 
 
-  <div class="container">
+  <div class="container-fluid">
 
     <nav class="navbar navbar-default">
       <div class="container">
@@ -51,9 +51,9 @@
             <!-- <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li> -->
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tools <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="/add-event">Add Event</a></li>
+                <li><a href="/manage-events">Manage Events</a></li>
                 <!-- <li><a href="#">Another action</a></li>
                 <li><a href="#">Something else here</a></li>
                 <li role="separator" class="divider"></li>
@@ -66,17 +66,24 @@
         </div><!--/.nav-collapse -->
       </div>
     </nav>
+
     {{{body}}}
+
   </div><!--/.container -->
-  <div class="container theme-showcase" role="main">
 
-
-  </div> <!-- /container -->
-  <script
-  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous"></script>
-  <!-- Latest compiled and minified JavaScript -->
+
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <script src="js/moment.min.js"></script>
+  <script>
+  $( document ).ready(function() {
+    $("input[name*='time']").blur(function () {
+      moment($(this).text()).format("H:mm a");
+    });
+  });
+  </script>
 </body>
 </html>
