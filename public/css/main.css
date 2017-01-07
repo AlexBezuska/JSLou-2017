@@ -1,3 +1,80 @@
 *, *:before, *:after {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
+
+.small-print {
+  margin: 0 0 0 8px;
+  padding: 10px 15px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px; }
+  .small-print .glyphicon {
+    margin-right: 5px; }
+
+.module {
+  margin: 25px 0; }
+
+.add-event-btn {
+  margin-top: 18px; }
+
+.header {
+  margin-bottom: 34px; }
+
+.scroll-box {
+  max-height: 740px;
+  overflow-y: scroll; }
+
+.private {
+  display: none; }
+
+.control-label {
+  text-align: left !important;
+  width: 50%;
+  float: left;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px; }
+
+.control-item {
+  width: 50%;
+  float: left;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px; }
+
+.title .control-label,
+.directions .control-label,
+.firstName .control-label,
+.lastName .control-label,
+.description .control-label,
+.photo .control-label,
+.photoAlt .control-label,
+.meetup .control-label {
+  width: 100%;
+  padding-bottom: 9px; }
+
+.title .control-item,
+.directions .control-item,
+.firstName .control-item,
+.lastName .control-item,
+.description .control-item,
+.photo .control-item,
+.photoAlt .control-item,
+.meetup .control-item {
+  width: 100%; }
+
+.description .control-item .form-control {
+  height: 128px; }
+
+.location .control-label {
+  width: 20%; }
+
+.location .control-item {
+  width: 80%; }
+
+.event-title {
+  max-width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }

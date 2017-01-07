@@ -1,0 +1,54 @@
+.private{
+  display: none;
+  //opacity: 0.2 !important;
+}
+
+.control-label{
+  text-align: left !important;
+  width: 50%;
+  float:left;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.control-item{
+  width: 50%;
+  float:left;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.title,
+.directions,
+.firstName,
+.lastName,
+.description,
+.photo,
+.photoAlt,
+.meetup{
+  .control-label{
+    width: 100%;
+    padding-bottom: 9px;
+  }
+  .control-item{
+    width: 100%;
+  }
+}
+
+.description .control-item .form-control{
+  height: 128px;
+}
+
+
+.location{
+  .control-label{
+    width: 20%;
+  }
+  .control-item{
+    width: 80%;
+  }
+}

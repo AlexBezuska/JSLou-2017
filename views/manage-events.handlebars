@@ -1,41 +1,15 @@
-<style>
-.small-print{
-  margin: 0 0 0 8px;
-  padding: 10px 15px;
-  font-size: 16px;
-  background: rgba(255,255,255,0.2);
-  border-radius: 4px;
-}
-.small-print .glyphicon{
-  margin-right: 5px;
-}
-.module{
-  margin: 25px 0;
-}
-.add-event-btn{
-  margin-top: 18px;
-}
-.header{
-  margin-bottom: 34px;
-}
-.scroll-box{
-  max-height: 740px;
-  overflow-y: scroll;
-}
-</style>
-
-
-
 <div class="row header">
   <div class="col-xs-6">
-    <h2>Manage Events
+    <h2>
+      Manage Events
       {{#if_eq state.task "create"}}<span class="small-print"><span class="glyphicon glyphicon-plus"></span> Create Mode</span>{{/if_eq}}
       {{#if_eq state.task "edit"}}<span class="small-print"><span class="glyphicon glyphicon-pencil"></span> Edit Mode</span>{{/if_eq}}
     </h2>
   </div>
   <div class="col-xs-6">
     <a href="/manage-events" id="clear-form-btn" class="btn btn-success pull-right">
-      <span class="glyphicon glyphicon-add" aria-hidden="true"></span> Clear form
+      <span class="glyphicon glyphicon-add" aria-hidden="true"></span>
+      Clear form
     </a>
   </div>
 </div>
@@ -43,19 +17,20 @@
 <div class="row">
   <div class="col-xs-7 ">
     <div class="panel panel-default">
-      <div class="panel-heading">Events ({{#count events}}{{events}}{{/count}})</div>
-      <div class="panel-body scroll-box" id="events-table-scoll-box">
-        {{> events}}
-      </div>
+    <div class="panel-heading">Events ({{#count events}}{{events}}{{/count}})</div>
+    <div class="panel-body scroll-box" id="events-table-scoll-box">
+    {{> events}}
+    </div>
     </div>
   </div>
   <div class="col-xs-5">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <strong>{{editingEvent}}</strong> Event Properties</div>
-        <div class="panel-body scroll-box">
-          {{> form}}
-        </div>
+        <strong>{{editingEvent}}</strong> Event Properties
+      </div>
+      <div class="panel-body scroll-box">
+        {{> form}}
       </div>
     </div>
   </div>
+</div>

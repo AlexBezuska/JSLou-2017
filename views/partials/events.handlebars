@@ -1,26 +1,9 @@
-<style>
-/*.events-table{
-  max-height: 375px;
-  overflow-y: scroll;
-}
-.events-table .event-title{
-  max-width: 300px;
-  overflow: elipsis;
-}*/
-.event-title{
-  max-width: 250px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-</style>
-
-
-    <div class="events-table table-responsive">
-      <table class=" table table-striped table-bordered table-condensed">
-        {{#sortByDate events direction="descending"}}
-        {{#each this}}
+<div class="events-table table-responsive">
+  <table class=" table table-striped table-bordered table-condensed">
+    {{#sortByDate events direction="descending"}}
+      {{#each this}}
         <tr data-id="{{id}}">
+
           <td>
             <a href="/delete-event?id={{id}}"
             id="{{id}}" type="button" class="btn btn-default btn-xs delete-event-btn"
@@ -40,7 +23,7 @@
           </td>
 
         </tr>
-        {{/each}}
-        {{/sortByDate}}
-      </table>
+      {{/each}}
+    {{/sortByDate}}
+  </table>
 </div>

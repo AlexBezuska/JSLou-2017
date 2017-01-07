@@ -1,0 +1,27 @@
+.small-print{
+  margin: 0 0 0 8px;
+  padding: 10px 15px;
+  font-size: 16px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 4px;
+  .glyphicon{
+    margin-right: 5px;
+  }
+}
+
+.module{
+  margin: 25px 0;
+}
+
+.add-event-btn{
+  margin-top: 18px;
+}
+
+.header{
+  margin-bottom: 34px;
+}
+
+.scroll-box{
+  max-height: 740px;
+  overflow-y: scroll;
+}
