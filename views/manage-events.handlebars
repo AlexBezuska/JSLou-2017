@@ -1,36 +1,17 @@
 <div class="row header">
   <div class="col-xs-6">
-    <h2>
-      Manage Events
-      {{#if_eq state.task "create"}}<span class="small-print"><span class="glyphicon glyphicon-plus"></span> Create Mode</span>{{/if_eq}}
-      {{#if_eq state.task "edit"}}<span class="small-print"><span class="glyphicon glyphicon-pencil"></span> Edit Mode</span>{{/if_eq}}
-    </h2>
+    <h2>Manage Events</h2>
   </div>
   <div class="col-xs-6">
-    <a href="/manage-events" id="clear-form-btn" class="btn btn-success pull-right">
-      <span class="glyphicon glyphicon-add" aria-hidden="true"></span>
-      Clear form
-    </a>
+
   </div>
 </div>
 
 <div class="row">
   <div class="col-xs-7 ">
-    <div class="panel panel-default">
-    <div class="panel-heading">Events ({{#count events}}{{events}}{{/count}})</div>
-    <div class="panel-body scroll-box" id="events-table-scoll-box">
     {{> events}}
-    </div>
-    </div>
   </div>
   <div class="col-xs-5">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <strong>{{editingEvent}}</strong> Event Properties
-      </div>
-      <div class="panel-body scroll-box">
-        {{> form}}
-      </div>
-    </div>
+  {{> form}}
   </div>
 </div>

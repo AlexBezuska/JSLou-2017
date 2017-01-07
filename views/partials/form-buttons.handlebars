@@ -1,0 +1,13 @@
+<span class="form-buttons">
+
+  <button type="submit" class="btn btn-success pull-right">
+    <span class="glyphicon glyphicon-save-file" aria-hidden="true"></span>
+    {{#if_eq state.task "create"}}Schedule Event{{/if_eq}}
+    {{#if_eq state.task "edit"}}Submit Changes{{/if_eq}}
+  </button>
+
+  <a href="/manage-events" class="btn btn-default pull-right clear-form-btn">
+    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Clear Form
+  </a>
+
+</span>

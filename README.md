@@ -31,7 +31,7 @@ You can also view the live site here: [JSLou.org](http://jslou.org).
 ## To view your changes locally
 
  * Navigate to the project in your terminal
- * Run `node app.js` to start the express Server
+ * Run `npm run start` to start the express Server
  * Navigate to [localhost:1337](localhost:1337) in your browser to view the site
 
 

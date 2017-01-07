@@ -1,4 +1,20 @@
+
 <form class="form-module form-horizontal" action="http://127.0.0.1:1337/manage-events/submit" method="post">
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <div class="row">
+      <div class="col-xs-6">
+        <p class="panel-title">{{editingEvent}}</strong> Event Properties</p>
+      </div>
+      <div class="col-xs-6">
+        {{> form-buttons}}
+      </div>
+    </div>
+  </div>
+  <div class="panel-body scroll-box">
+
+
 
   {{#each addEvent}}
 
@@ -50,10 +66,12 @@
 {{/each}}
 
 
-<button type="submit" class="btn btn-success pull-right">
-  <span class="glyphicon glyphicon-save-file" aria-hidden="true"></span>
-  {{#if_eq state.task "create"}}Schedule Event{{/if_eq}}
-  {{#if_eq state.task "edit"}}Submit Changes{{/if_eq}}
-</button>
-</form>
+{{> form-buttons}}
 
+
+
+
+
+</div>
+</div>
+</form>

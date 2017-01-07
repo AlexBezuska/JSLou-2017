@@ -5,6 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run build-css && node app.js",
     "build-css": "node-sass --include-path scss scss/main.scss   public/css/main.css"
   },
   "repository": {

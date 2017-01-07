@@ -1,6 +1,10 @@
 *, *:before, *:after {
   box-sizing: border-box; }
 
+.container-fluid {
+  max-width: 90%;
+  margin: 0 auto; }
+
 .small-print {
   margin: 0 0 0 8px;
   padding: 10px 15px;
@@ -22,6 +26,9 @@
 .scroll-box {
   max-height: 740px;
   overflow-y: scroll; }
+
+.panel-title {
+  margin: 10px 0 0 0; }
 
 .private {
   display: none; }
@@ -73,8 +80,20 @@
 .location .control-item {
   width: 80%; }
 
+.form-buttons button, .form-buttons a {
+  margin: 0 5px; }
+
+.form-buttons .btn-default {
+  background: #6c6c6f; }
+
 .event-title {
   max-width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.event-speaker {
+  max-width: 90px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis; }

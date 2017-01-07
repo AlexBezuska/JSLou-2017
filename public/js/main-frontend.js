@@ -11,7 +11,7 @@ $( document ).ready(function() {
   }
 
 
-$('#clear-form-btn').click(function(e){
+$('.clear-form-btn').click(function(e){
   if (!confirm('This will delete any unsaved changes to the current event.')) e.preventDefault();
 });
 
