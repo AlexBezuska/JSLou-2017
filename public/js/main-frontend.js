@@ -1,13 +1,29 @@
 $( document ).ready(function() {
-  var $currentItem = $("tr[data-id='"+ getParameterByName("id") +"']");
-  var $container = $("#events-table-scoll-box");
+  var queryStringId = getParameterByName("id");
+  if (queryStringId){
+    var $currentItem = $("tr[data-id='"+ queryStringId +"']");
 
-  // Highlight selected row in table
-  $currentItem.addClass("success");
+    // Highlight selected row in table
+    $currentItem.addClass("success");
 
-  // Scroll to selected row in table
-  scrollToTop ($container, $currentItem);
+    // Scroll to selected row in table
+    scrollToTop ($("#events-table-scoll-box"), $currentItem);
+  }
+
+
+$('#clear-form-btn').click(function(e){
+  if (!confirm('This will delete any unsaved changes to the current event.')) e.preventDefault();
 });
+
+$('.delete-event-btn').click(function(e){
+  var dateStart = $(this).attr('data-dateStart');
+  if (!confirm('This will delete any unsaved changes to the event scheduled on ' + dateStart )) e.preventDefault();
+});
+
+
+}); // doc ready
+
+
 
 function getParameterByName(name) {
   name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
@@ -23,6 +39,7 @@ function getParameterByName(name) {
 
 function scrollToTop (container, element) {
   container.animate({
-      scrollTop: element.offset().top - container.offset().top + container.scrollTop()
+    scrollTop: element.offset().top - container.offset().top + container.scrollTop()
   })
 }
+
