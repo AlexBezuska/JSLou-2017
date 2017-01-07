@@ -7,11 +7,15 @@
   max-width: 300px;
   overflow: elipsis;
 }*/
+.event-title{
+  max-width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 </style>
 
-<div class="panel panel-default">
-  <div class="panel-heading">Events ({{#count events}}{{events}}{{/count}})</div>
-  <div class="panel-body">
+
     <div class="events-table table-responsive">
       <table class=" table table-striped table-bordered table-condensed">
         {{#sortByDate events direction="descending"}}
@@ -19,7 +23,7 @@
         <tr data-id="{{id}}">
           <th class="event-title" scope="row">{{title}}</th>
           <td>{{timeStart}} on {{dateStart}}</td>
-          <td>{{timeStart}} on {{dateStart}}</td>
+          <!-- <td>{{timeStart}} on {{dateStart}}</td> -->
           <td>
             <a href="/manage-events?id={{id}}" id="{{id}}" type="button" class="btn btn-default btn-xs">
               <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
@@ -34,6 +38,4 @@
         {{/each}}
         {{/sortByDate}}
       </table>
-    </div>
-  </div>
 </div>

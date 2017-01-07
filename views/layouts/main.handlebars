@@ -72,16 +72,10 @@
   <script src="js/moment.min.js"></script>
 
   <script>
-
-
-
   $( document ).ready(function() {
     // $("input[name*='time']").blur(function () {
     //   moment($(this).text()).format("H:mm a");
     // });
-
-
-
     function getParameterByName(name) {
       name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
       var regexS = "[\\?&]" + name + "=([^&#]*)";
@@ -94,11 +88,21 @@
       }
     }
 
-
     var queryId = getParameterByName("id");
 
-    $("tr[data-id='"+ queryId +"']").addClass("success");
+    var $currentItem = $("tr[data-id='"+ queryId +"']");
 
+    $currentItem.addClass("success");
+
+    var container = $("#events-table-scoll-box");
+    // container.scrollTop(
+    //     scrollTo.offset().top - container.offset().top + container.scrollTop()
+    // );
+
+    // Or you can animate the scrolling:
+    container.animate({
+        scrollTop: $currentItem.offset().top - container.offset().top + container.scrollTop()
+    })
 
   });
   </script>
