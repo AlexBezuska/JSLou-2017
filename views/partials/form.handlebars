@@ -4,6 +4,9 @@
   /*max-height: 740px;
   overflow-y: scroll;*/
 }
+.private{
+  opacity: 0.2 !important;
+}
 </style>
 
 <form class="form-module form-horizontal" action="http://127.0.0.1:1337/manage-events/submit" method="post">
@@ -11,7 +14,7 @@
   {{#each addEvent}}
 
   {{#if_eq type "private"}}
-   <div style="opacity:0.5;">{{label}}{{value}}</div>
+    <input type="text" class="form-control private" id="{{@key}}" name="{{@key}}" value="{{value}}"/>
   {{else}}
 
     {{#if_eq type "formatting"}}

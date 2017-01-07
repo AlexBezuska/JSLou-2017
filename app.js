@@ -126,10 +126,13 @@ function cleanJSON(input){
 
 function addEvent(state, newEvent){
   if (eventExists(state, newEvent.id)){
+    var storeId = newEvent.id
     deleteEvent(state, newEvent.id);
+    newEvent.id = storeId;
+  }else{
+    newEvent.id = uuid();
   }
   var newArray = cleanJSON(state.events);
-  newEvent.id = uuid();
   newArray.unshift(newEvent);
   state.events = newArray;
   return newArray;
