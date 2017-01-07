@@ -1,5 +1,43 @@
 [
   {
+    "id": "1646911b-5748-4b98-b5df-1cac13482b14",
+    "title": "\"Putting it all together, it's time to take a poop...Together!\" - a secure deployment ready NodeJs crud app",
+    "day": "Wednesday",
+    "dateStart": "2016-02-17",
+    "timeStart": "7pm",
+    "dateEnd": "",
+    "timeEnd": "",
+    "directions": "https://www.google.com/maps?f=q&hl=en&q=612+W+Washington+St.,+Louisville,+KY+40202,+KY,+us",
+    "location": "Warp Zone Louisville",
+    "firstName": "Adam",
+    "lastName": "Bell",
+    "description": "I will demonstrate how to build and end to end NodeJS webapp including authentication, client side validation, and logging. I will be using the following technologies for the discussion and demonstration: Nodejs, Express, PassportJS, Mongoose, Angular, and Bootstrap. I will also demonstrate how to use the mongoose schema and Angulars ngMessages to build client side validations.",
+    "photo": "img/speakers/adam-bell.jpg",
+    "photoAlt": "Adam Bell JavaScript developer Louisville, KY Feburary 17, 20156",
+    "meetup": "http://www.meetup.com/JSLouKY/events/227280742/",
+    "attendance": "9",
+    "rsvps": "9"
+  },
+  {
+    "id": "8d6ce37c-a311-4ae1-afa3-5a54e30d55e1",
+    "title": "Shamwow extravaganza!",
+    "day": "Wednesday",
+    "dateStart": "2017-03-14",
+    "timeStart": "7pm",
+    "dateEnd": "",
+    "timeEnd": "",
+    "directions": "https://www.google.com/maps?f=q&hl=en&q=612+W+Washington+St.,+Louisville,+KY+40202,+KY,+us",
+    "location": "Warp Zone Louisville",
+    "firstName": "Carrot",
+    "lastName": "Pipperoni",
+    "description": "",
+    "photo": "img/hack-night-logo-wz.jpg",
+    "photoAlt": "JSLou JavaScript Louisville Kentucky",
+    "meetup": "",
+    "attendance": "",
+    "rsvps": ""
+  },
+  {
     "id": "083294a3-1399-4a7b-80bb-6ac360bfd045",
     "title": "asdasdasdas",
     "day": "Wednesday",
@@ -172,24 +210,6 @@
     "attendance": 24,
     "rsvps": 24,
     "id": "e92effd2-07d8-4ef8-b3a2-2d32e78d38f1"
-  },
-  {
-    "firstName": "",
-    "lastName": "",
-    "day": "Wednesday",
-    "dateStart": "2016-11-02",
-    "timeStart": "7pm",
-    "directions": "https://www.google.com/maps?f=q&hl=en&q=612+W+Washington+St.,+Louisville,+KY+40202,+KY,+us",
-    "location": "Warp Zone Louisville",
-    "meetup": "https://www.meetup.com/JSLouKY/events/231524593/",
-    "photo": "img/hack-night-logo-wz.jpg",
-    "photoAlt": "JSLOU JAVASCRIPT HACK NIGHT",
-    "links": [],
-    "title": "JSLOU JAVASCRIPT HACK NIGHT",
-    "description": "Come hang out, chat, and work on anything JavaScript related. Be sure to bring a laptop this is a time to get things done on your existing projects not a normal structured meeting!",
-    "attendance": 9,
-    "rsvps": 9,
-    "id": "6be2d75d-8fd4-4b12-ade4-e39d68b5af19"
   },
   {
     "firstName": "Lightning Talks",
@@ -383,24 +403,6 @@
     "description": "Come hang out, chat, and work on anything JavaScript related. Be sure to bring a laptop this is a time to get things done on your existing projects not a normal structured meeting!",
     "attendance": 6,
     "rsvps": 6,
-    "id": "4c0c2bbf-fff0-4c74-b8f7-3ff53cbbbf55"
-  },
-  {
-    "firstName": "",
-    "lastName": "",
-    "day": "Wednesday",
-    "dateStart": "2016-06-01",
-    "timeStart": "7pm",
-    "directions": "https://www.google.com/maps?f=q&hl=en&q=612+W+Washington+St.,+Louisville,+KY+40202,+KY,+us",
-    "location": "Event cancelled",
-    "meetup": "",
-    "photo": "img/hack-night-logo-wz.jpg",
-    "photoAlt": "",
-    "links": [],
-    "title": "JSLOU JAVASCRIPT HACK NIGHT",
-    "description": "Come hang out, chat, and work on anything JavaScript related. Be sure to bring a laptop this is a time to get things done on your existing projects not a normal structured meeting!",
-    "attendance": 6,
-    "rsvps": 6,
     "id": "af7a12d4-4eb8-4dea-9ea5-f3614c00fc2d"
   },
   {
@@ -509,33 +511,6 @@
     "attendance": 19,
     "rsvps": 19,
     "id": "ee7d6771-2d0c-4f44-8718-c69c20d39ac7"
-  },
-  {
-    "firstName": "Adam",
-    "lastName": "Bell",
-    "day": "Wednesday",
-    "dateStart": "2016-02-17",
-    "timeStart": "7pm",
-    "directions": "https://www.google.com/maps?f=q&hl=en&q=612+W+Washington+St.,+Louisville,+KY+40202,+KY,+us",
-    "location": "Warp Zone Louisville",
-    "meetup": "http://www.meetup.com/JSLouKY/events/227280742/",
-    "photo": "img/speakers/adam-bell.jpg",
-    "photoAlt": "Adam Bell JavaScript developer Louisville, KY Feburary 17, 20156",
-    "links": [
-      {
-        "type": "GitHub",
-        "url": "https://github.com/AdamPBell"
-      },
-      {
-        "type": "LinkedIn",
-        "url": "http://LinkedIn.com/in/adambellp"
-      }
-    ],
-    "title": "\"Putting it all together\" - a secure deployment ready NodeJs crud app",
-    "description": "I will demonstrate how to build and end to end NodeJS webapp including authentication, client side validation, and logging. I will be using the following technologies for the discussion and demonstration: Nodejs, Express, PassportJS, Mongoose, Angular, and Bootstrap. I will also demonstrate how to use the mongoose schema and Angulars ngMessages to build client side validations.",
-    "attendance": 9,
-    "rsvps": 9,
-    "id": "1646911b-5748-4b98-b5df-1cac13482b14"
   },
   {
     "firstName": "",

@@ -5,7 +5,8 @@
   overflow-y: scroll;*/
 }
 .private{
-  opacity: 0.2 !important;
+  display: none;
+  //opacity: 0.2 !important;
 }
 </style>
 
@@ -20,14 +21,14 @@
     {{#if_eq type "formatting"}}
 
         {{#if_eq wrapper "start"}}
-          <div class="panel {{#if panel-type}}{{panel-type}}{{else}}panel-default{{/if}}">
+          <div class="panel panel-success">
             {{#if label}}<div class="panel-heading">{{label}}</div>{{/if}}
             <div class="panel-body">
 
         {{else}}
 
-            </div><!-- /panel-body -->
-          </div><!-- /panel panel-default -->
+            </div>
+          </div>
         {{/if_eq}}
 
     {{else}}
@@ -54,14 +55,14 @@
 
     {{/if_eq}}
 
-    {{/if_eq}}
+  {{/if_eq}}
 
 
 
   {{/each}}
 
 
-  <button type="submit" class="btn btn-default btn-lg pull-right">
+  <button type="submit" class="btn btn-success pull-right">
   <span class="glyphicon glyphicon-save-file" aria-hidden="true"></span>
   {{#if_eq state.task "create"}}Schedule Event{{/if_eq}}
   {{#if_eq state.task "edit"}}Submit Changes{{/if_eq}}

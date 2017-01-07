@@ -1,32 +1,54 @@
-<h2>Manage Event
+<style>
+.small-print{
+  margin: 0 0 0 8px;
+  padding: 10px 15px;
+  font-size: 16px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 4px;
+}
+.small-print .glyphicon{
+  margin-right: 5px;
+}
+.module{
+  margin: 25px 0;
+}
+.add-event-btn{
+  margin-top: 18px;
+}
+.header{
+  margin-bottom: 34px;
+}
+</style>
 
-{{#if_eq state.task "create"}} > Create Mode{{/if_eq}}
-{{#if_eq state.task "edit"}} > Edit Mode{{/if_eq}}
-</h2>
 
-{{#if justAdded}}
-<div class="panel panel-success">
-  <div class="panel-heading">
-    <h4 class="panel-title">Success!</h3>
+
+<div class="row header">
+  <div class="col-xs-6">
+
+    <h2>Manage Event
+      {{#if_eq state.task "create"}}<span class="small-print"><span class="glyphicon glyphicon-plus"></span> Create Mode</span>{{/if_eq}}
+      {{#if_eq state.task "edit"}}<span class="small-print"><span class="glyphicon glyphicon-pencil"></span> Edit Mode</span>{{/if_eq}}
+    </h2>
   </div>
-  <div class="panel-body">
-    <p>The new event on: {{editingEvent}} has been added to events.json.</p>
+<div class="col-xs-6">
+      <a href="/manage-events" type="submit" class="btn btn-success pull-right add-event-btn">
+        <span class="glyphicon glyphicon-add" aria-hidden="true"></span> Add New Event
+      </a>
+
   </div>
 </div>
-{{/if}}
-
 
 <div class="row">
-  <div class="col-xs-6">
-      {{> events}}
+  <div class="col-xs-7">
+    {{> events}}
   </div>
-  <div class="col-xs-6">
+  <div class="col-xs-5">
     <div class="panel panel-default">
       <div class="panel-heading">
- <strong>{{editingEvent}}</strong> Event Properties</div>
-      <div class="panel-body">
-        {{> form}}
+        <strong>{{editingEvent}}</strong> Event Properties</div>
+        <div class="panel-body">
+          {{> form}}
+        </div>
       </div>
     </div>
   </div>
-</div>

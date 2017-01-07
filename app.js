@@ -37,7 +37,9 @@ app.get('/manage-events', function (req, res, next) {
   if (eventId) {
     if (eventExists(state, eventId)) {
       state.task = "edit";
-      fillDefaults(state, selectEvent(state, eventId));
+      var selectedEvent = selectEvent(state, eventId);
+      state.idCurrentlyEditing = selectedEvent.id;
+      fillDefaults(state, selectedEvent);
     }
   } else {
     state.task = "create";
@@ -113,20 +115,19 @@ function cleanJSON(input){
   return newArray;
 }
 
-function addEvent(state, newEvent){
-  if (eventExists(state, newEvent.id)){
-    var storeId = newEvent.id;
-    deleteEvent(state, newEvent.id);
-    console.log("storeId", storeId);
-    newEvent.id = storeId;
-    console.log("Updated existing event with id:", newEvent.id);
+function addEvent(state, thisEvent){
+  if (eventExists(state, thisEvent.id)){
+    var storeId = thisEvent.id;
+    deleteEvent(state, thisEvent.id);
+    thisEvent.id = storeId;
+    console.log("Updated existing event with id:", thisEvent.id);
   }else{
-    newEvent.id = uuid();
-    console.log("Created new event with id:", newEvent.id);
+    thisEvent.id = uuid();
+    console.log("Created new event with id:", thisEvent.id);
   }
 
   var newArray = cleanJSON(state.events);
-  newArray.unshift(newEvent);
+  newArray.unshift(thisEvent);
   state.events = newArray;
   return newArray;
 }
