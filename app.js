@@ -40,6 +40,8 @@ app.get('/manage-events', function (req, res, next) {
       var selectedEvent = selectEvent(state, eventId);
       state.idCurrentlyEditing = selectedEvent.id;
       fillDefaults(state, selectedEvent);
+    } else {
+      console.log("invalid event id", eventId);
     }
   } else {
     state.task = "create";
@@ -90,7 +92,7 @@ function eventExists(state, id){
   }
   return cleanJSON(state.events).filter(
     obj => obj.id === id
-  );
+  ).length > 0;
 }
 
 function selectEvent(state, id){
