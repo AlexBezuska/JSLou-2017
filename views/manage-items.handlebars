@@ -1,0 +1,12 @@
+<div class="row">
+  <div class="col-xs-6">
+    {{> items-table}}
+  </div>
+
+  <div class="col-xs-6">
+    <form class="form-module form-horizontal" action="http://127.0.0.1:{{serverPort}}/manage-items/submit" method="post">
+      {{> form}}
+      {{> form-buttons}}
+    </form>
+  </div>
+</div>

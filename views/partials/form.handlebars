@@ -1,77 +1,43 @@
+{{#each additem}}
+      <div class="form-group form-{{this.key}}">
 
-<form class="form-module form-horizontal" action="http://127.0.0.1:1337/manage-events/submit" method="post">
+        {{> form-label}}
+        <div class="control-item">
+          {{> form-input}}
+          {{> form-textarea}}
+          {{> form-checkbox}}
+          {{> form-radio}}
+          {{> form-file}}
+          {{> form-date}}
+          {{> form-description}}
+        </div>
 
-<div class="panel panel-default">
-  <div class="panel-heading">
-    <div class="row">
-      <div class="col-xs-6">
-        <p class="panel-title">{{editingEvent}}</strong> Event Properties</p>
       </div>
-      <div class="col-xs-6">
-        {{> form-buttons}}
-      </div>
-    </div>
-  </div>
-  <div class="panel-body scroll-box">
-
-
-
-  {{#each addEvent}}
-
-  {{#if_eq type "private"}}
-  <input type="text" class="form-control private" id="{{@key}}" name="{{@key}}" value="{{value}}"/>
-  {{else}}
-
-  {{#if_eq type "formatting"}}
-
-  {{#if_eq wrapper "start"}}
-  <div class="panel panel-success">
-    {{#if label}}<div class="panel-heading">{{label}}</div>{{/if}}
-    <div class="panel-body">
-
-      {{else}}
-
-    </div>
-  </div>
-  {{/if_eq}}
-
-  {{else}}
-
-  {{#if label}}
-  <div class="form-group {{@key}}">
-    <label for="{{@index}}" class="control-label">{{label}}{{#if required}}<span class="req"> *</span>{{/if}}
-      <!-- {{#if url}}
-      <a href="{{value}}" type="button" class="btn btn-default btn-xs" target="_blank">
-      <span class="glyphicon glyphicon-link" aria-hidden="true"></span>
-    </a>
-    {{/if}} -->
-  </label>
-  <div class="control-item">
-    {{#if_eq element "input"}}
-    <input type="{{type}}" class="form-control" id="{{@key}}" name="{{@key}}" value="{{#if value}}{{value}}{{/if}}" {{#if required}}required{{/if}}/>
-    {{/if_eq}}
-    {{#if_eq element "textarea"}}
-    <textarea class="form-control" id="{{@key}}" name="{{@key}}">{{#if value}}{{value}}{{/if}}</textarea>
-    {{/if_eq}}
-  </div>
-</div>
-{{/if}}
-
-{{/if_eq}}
-
-{{/if_eq}}
-
-
-
 {{/each}}
 
 
-{{> form-buttons}}
+
+  <!-- <div class="form-group">
+
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" ng-model="vm.user.email">
+  </div>
 
 
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" ng-model="vm.user.password">
+  </div>
 
+  <div class="form-group">
+    <label for="exampleInputFile">File input</label>
+    <input type="file" id="exampleInputFile" ng-model="vm.user.file">
+    <p class="help-block">Example block-level help text here.</p>
+  </div>
 
-
-</div>
-</div>
-</form>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" ng-model="vm.user.checked"> Check me out
+    </label>
+  </div>
+  <button type="submit" class="btn btn-default" ng-click="vm.submit(vm.user)">Submit</button>
+ -->

@@ -1,0 +1,10 @@
+{{#ifEqual this.type "input"}}
+<input
+type="{{this.type}}"
+class="form-control"
+id="this.key"
+name="{{this.key}}"
+placeholder="{{this.templateOptions.placeholder}}"
+value="{{this.data}}"
+{{#if this.templateOptions.required}}required{{/if}} {{#if this.templateOptions.readonly}}readonly{{/if}} />
+{{/ifEqual}}

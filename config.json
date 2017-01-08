@@ -1,0 +1,7 @@
+{
+  "itemsFile": "./data/items.json",
+  "items": "./data/items.json",
+  "itemFile": "./models/item.json",
+  "defaultsFile": "./models/item-defaults.json",
+  "serverPort": "7890"
+}

@@ -1,7 +1,7 @@
 {
-  "name": "jslou-2017",
+  "name": "json-editor",
   "version": "0.1.0",
-  "description": "The official website for Louisville Kentucky's JavaScript community, established September 2013.",
+  "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

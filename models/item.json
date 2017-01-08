@@ -1,0 +1,57 @@
+[
+  {
+    "key": "id",
+    "type": "input",
+    "templateOptions": {
+      "readonly": true,
+      "label": "id"
+    }
+  },
+  {
+    "key": "input",
+    "type": "input",
+    "templateOptions": {
+      "required": true,
+      "label": "Input",
+      "placeholder": "this is an input"
+    }
+  },
+  {
+    "key": "textarea",
+    "type": "textarea",
+    "templateOptions": {
+      "label": "Text Area",
+      "placeholder": "This is a text area."
+    }
+  },
+  {
+    "key": "file",
+    "type": "file",
+    "templateOptions": {
+      "label": "File input",
+      "description": "Example block-level help text here",
+      "url": "https://example.com/upload"
+    }
+  },
+  {
+    "key": "checkbox",
+    "type": "checkbox",
+    "templateOptions": {
+      "label": "Checkboxes"
+    }
+  },
+  {
+    "key": "radio",
+    "type": "radio",
+    "templateOptions": {
+      "label": "Radio Buttons"
+    }
+  },
+  {
+    "key": "date",
+    "type": "date",
+    "templateOptions": {
+      "label": "Date"
+    }
+  }
+]

@@ -7,8 +7,7 @@ var app = express();
 var handlebars = require('express-handlebars');
 var hbs = handlebars.create({
   helpers: {
-    sortByDate: require("./helpers/sortByDate.js"),
-    if_eq: require("./helpers/if_eq.js"),
+    ifEqual: require("./helpers/ifEqual.js"),
     count: require("./helpers/count.js")
   }
 });
@@ -17,12 +16,13 @@ app.set('view engine', 'handlebars');
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({ extended: true }));
 
+var config = require('./config.json');
 
 var state = {
-  eventsFile : "./data/events.json",
-  events: require("./data/events.json"),
-  eventModel : require("./models/event-model.json"),
-  eventDefaults : require("./models/event-defaults.json"),
+  itemsFile : config.itemsFile,
+  items: require(config.itemsFile),
+  itemModel : require(config.itemFile),
+  itemDefaults : require(config.itemFile),
   task: "create"
 }
 
@@ -32,81 +32,80 @@ app.get('/', function (req, res) {
   res.render('home', {layout: 'main'});
 });
 
-app.get('/manage-events', function (req, res, next) {
-  var eventId = req.query.id;
-  if (eventId) {
-    if (eventExists(state, eventId)) {
+app.get('/manage-items', function (req, res, next) {
+  var itemId = req.query.id;
+  if (itemId) {
+    if (itemExists(state, itemId)) {
       state.task = "edit";
-      var selectedEvent = selectEvent(state, eventId);
-      state.idCurrentlyEditing = selectedEvent.id;
-      fillDefaults(state, selectedEvent);
+      var selecteditem = selectitem(state, itemId);
+      //console.log("selecteditem", selecteditem);
+      state.idCurrentlyEditing = selecteditem.id;
+        state.itemModel = smashPostBodyIntoModel(state.itemModel, selecteditem);
+        console.log("state.itemModel",state.itemModel);
     } else {
-      console.log("invalid event id", eventId);
+      console.log("invalid item id", itemId);
     }
   } else {
     state.task = "create";
-    fillDefaults(state, state.eventDefaults);
+    fillDefaults(state);
   }
 
-  res.render('manage-events', {
-    editingEvent: req.params.editingEvent,
-    addEvent: state.eventModel,
-    events: state.events,
+  res.render('manage-items', {
+    editingitem: req.params.editingitem,
+    additem: state.itemModel,
+    items: state.items,
     state: state,
+    serverPort: config.serverPort,
     layout: 'main'
   });
 
 });
 
-
-app.post('/manage-events/submit', function(req, res, next) {
-  writeEventsFile (state.eventsFile, addEvent(state, req.body));
-  res.redirect('/manage-events');
+app.post('/manage-items/submit', function(req, res, next) {
+  writeitemsFile (state.itemsFile, additem(state, req.body));
+  res.redirect('/manage-items');
 });
 
-app.get('/delete-event', function(req, res, next) {
-  var eventId = req.query.id;
-  writeEventsFile (state.eventsFile, deleteEvent(state, eventId) );
-  res.redirect('/manage-events');
-});
-
-
-app.listen(1337, function() {
-  console.log('Server running at http://127.0.0.1:1337/');
+app.get('/delete-item', function(req, res, next) {
+  var itemId = req.query.id;
+  writeitemsFile (state.itemsFile, deleteitem(state, itemId) );
+  res.redirect('/manage-items');
 });
 
 
-function fillDefaults(state, eventObject){
-  if(typeof eventObject === "object"){
-    Object.keys(eventObject).forEach(function(key) {
-      Object.keys(state.eventModel).forEach(function(key) {
-        state.eventModel[key].value = eventObject[key];
-      });
-    });
+app.listen(parseFloat(config.serverPort), function() {
+  console.log('Server running at http://127.0.0.1:'+ config.serverPort + "/");
+});
+
+function fillDefaults(state){
+  var itemModel = state.itemModel;
+  for (var i = 0; i < itemModel.length; i++) {
+    itemModel[i].data = itemModel[i].templateOptions.placeholder || "";
   }
+  state.itemModel = itemModel;
 }
 
-function eventExists(state, id){
+function itemExists(state, id){
   if (id === ""){
     return false;
   }
-  return cleanJSON(state.events).filter(
+  return cleanJSON(state.items).filter(
     obj => obj.id === id
   ).length > 0;
 }
 
-function selectEvent(state, id){
-  return cleanJSON(state.events).filter(
+function selectitem(state, id){
+  return cleanJSON(state.items).filter(
     obj => obj.id === id
   )[0];
 }
 
-function deleteEvent(state, id){
-  state.events = cleanJSON(state.events).filter(
+function deleteitem(state, id){
+  state.items = cleanJSON(state.items).filter(
     obj => obj.id !== id
   );
-  console.log("Delete event with id:", id);
-  return state.events;
+  console.log("Delete item with id:", id);
+  return state.items;
 }
 
 function cleanJSON(input){
@@ -117,25 +116,37 @@ function cleanJSON(input){
   return newArray;
 }
 
-function addEvent(state, thisEvent){
-  if (eventExists(state, thisEvent.id)){
-    var storeId = thisEvent.id;
-    deleteEvent(state, thisEvent.id);
-    thisEvent.id = storeId;
-    console.log("Updated existing event with id:", thisEvent.id);
+function smashPostBodyIntoModel(model, postBody){
+  var newModel = model;
+  for (var i = 0; i < newModel.length; i++) {
+
+    newModel[i].data = postBody[model[i].key];
+    console.log(newModel[i].data);
+  }
+  return newModel;
+}
+
+
+function additem(state, thisitem){
+  smashPostBodyIntoModel(state.itemModel, thisitem);
+  if (itemExists(state, thisitem.id)){
+    var storeId = thisitem.id;
+    deleteitem(state, thisitem.id);
+    thisitem.id = storeId;
+    console.log("Updated existing item with id:", thisitem.id);
   }else{
-    thisEvent.id = uuid();
-    console.log("Created new event with id:", thisEvent.id);
+    thisitem.id = uuid();
+    console.log("Created new item with id:", thisitem.id);
   }
 
-  var newArray = cleanJSON(state.events);
-  newArray.unshift(thisEvent);
-  state.events = newArray;
+  var newArray = cleanJSON(state.items);
+  newArray.unshift(thisitem);
+  state.items = newArray;
   return newArray;
 }
 
 function fixIds(state){
-  var newArray = cleanJSON(state.events);
+  var newArray = cleanJSON(state.items);
   var idsWereAdded = false;
   for (var i = 0; i < newArray.length; i++) {
     if (!newArray[i].id) {
@@ -145,11 +156,11 @@ function fixIds(state){
     }
   }
   if (idsWereAdded) {
-    writeEventsFile (state.eventsFile, newArray);
+    writeitemsFile (state.itemsFile, newArray);
   }
 }
 
-function writeEventsFile (outputFile, data) {
+function writeitemsFile (outputFile, data) {
   var data = JSON.stringify(data, null, 2);
   if (data){
     fs.writeFile(outputFile, data, 'utf-8', function(err) {

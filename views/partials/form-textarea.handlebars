@@ -1,0 +1,15 @@
+<!-- {{#ifEqual type "textarea"}}
+<textarea class="form-control" id="{{@key}}" name="{{@key}}" {{#if readonly}}readonly{{/if}}>{{#if value}}{{value}}{{/if}}</textarea>
+{{/ifEqual}}
+ -->
+
+{{#ifEqual this.type "textarea"}}
+<textarea
+type="{{this.type}}"
+class="form-control"
+id="{{this.key}}"
+name="{{this.key}}"
+placeholder="{{this.templateOptions.placeholder}}"
+{{#if this.templateOptions.required}}required{{/if}} {{#if this.templateOptions.readonly}}readonly{{/if}} >{{this.data}}</textarea>
+{{/ifEqual}}
+
