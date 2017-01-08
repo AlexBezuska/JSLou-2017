@@ -23,8 +23,7 @@ Items can be anything, blog posts, events, portfolio items etc. anything that fo
 * Navigate to the project in your terminal
 * Run `npm install` to download the project's dependencies
 * Navigate to the project in your terminal
-* Run `npm run start` to start the express server
-* Navigate to [localhost:4000](localhost:4000) (or port you set in `config.json` in your browser to view the site
+* Run `npm run start` to start the express server, this will also [open](https://www.npmjs.com/package/open) the project in your browser automatically for you :)
 
 
 ### `config.json` options

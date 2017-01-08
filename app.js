@@ -1,6 +1,7 @@
 var uuid = require('uuid');
 var fs = require('fs');
 var moment = require('moment');
+var open = require('open');
 var express = require('express');
 var bodyParser = require('body-parser');
 var app = express();
@@ -43,15 +44,13 @@ app.get('/manage-items', function (req, res, next) {
     if (itemExists(state, itemId)) {
       state.task = "edit";
       var selecteditem = selectitem(state, itemId);
-      //console.log("selecteditem", selecteditem);
       state.idCurrentlyEditing = selecteditem.id;
-        state.itemModel = smashPostBodyIntoModel(state.itemModel, selecteditem);
-        console.log("state.itemModel",state.itemModel);
+      state.itemModel = smashPostBodyIntoModel(state.itemModel, selecteditem);
     } else {
       console.log("invalid item id", itemId);
+      fillDefaults(state);
     }
   } else {
-    state.task = "create";
     fillDefaults(state);
   }
 
@@ -67,6 +66,7 @@ app.get('/manage-items', function (req, res, next) {
 });
 
 app.post('/manage-items/submit', function(req, res, next) {
+  console.log("req.body",req.body);
   writeitemsFile (state.itemsFile, additem(state, req.body));
   res.redirect('/manage-items');
 });
@@ -79,10 +79,13 @@ app.get('/delete-item', function(req, res, next) {
 
 
 app.listen(parseFloat(config.serverPort), function() {
-  console.log('Server running at http://127.0.0.1:'+ config.serverPort + "/");
+  var url = 'http://127.0.0.1:'+ config.serverPort;
+  console.log('Server running at', url);
+  open(url + '/manage-items');
 });
 
 function fillDefaults(state){
+  state.task = "create";
   var itemModel = state.itemModel;
   for (var i = 0; i < itemModel.length; i++) {
     itemModel[i].data = itemModel[i].templateOptions.placeholder || "";
@@ -124,13 +127,10 @@ function cleanJSON(input){
 function smashPostBodyIntoModel(model, postBody){
   var newModel = model;
   for (var i = 0; i < newModel.length; i++) {
-
     newModel[i].data = postBody[model[i].key];
-    console.log(newModel[i].data);
   }
   return newModel;
 }
-
 
 function additem(state, thisitem){
   smashPostBodyIntoModel(state.itemModel, thisitem);
