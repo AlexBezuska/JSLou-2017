@@ -47,7 +47,7 @@ ex name: `items.json`
 
 Defines the item object and includes data types, names, and form field types for each item property.
 
-**Current supported field types: `input` `textarea`**
+**Current supported field types: `input`, `textarea`, and `option`**
 
 
 ** This project follows the Formly api for it's data structure. I will try to add a simplified version of "type" options and "templateOptions" here soon, but for now you can reference the [Formly api](http://docs.angular-formly.com/)**
