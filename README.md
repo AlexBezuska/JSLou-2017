@@ -29,7 +29,7 @@ Items can be anything, blog posts, events, portfolio items etc. anything that fo
 
 ### `config.json` options
 
-* **"itemsFile"** - (string) - path to where the actual data is/will be stored, this file can start blank or use existing data, but all objects added will use the format described in `itemJson`.
+* **"itemsFile"** - (string) - path to where the actual data is/will be stored, this file can start blank or use existing data, but all objects added will use the format described in `itemFile`.
 ex name: `items.json`
 
 ```
@@ -50,7 +50,7 @@ Defines the item object and includes data types, names, and form field types for
 **Current supported field types: `input` `textarea`**
 
 
-** This project follows the Formly api for it's data structure. I will try to add a simplified version of types and templateOptions here soon, but for now you can reference the [Formly api](http://docs.angular-formly.com/)**
+** This project follows the Formly api for it's data structure. I will try to add a simplified version of "type" options and "templateOptions" here soon, but for now you can reference the [Formly api](http://docs.angular-formly.com/)**
 
 Default file is included in `./models/item.json`
 
