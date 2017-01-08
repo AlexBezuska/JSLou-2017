@@ -6,7 +6,8 @@
 ## How it works
 
 This is a web app that takes a two JSON files, one with items and one that defines an item.
-items can be anything, blog posts, events etc. anything that follows this format:
+
+Items can be anything, blog posts, events, portfolio items etc. anything that follows the [Formly api format](#defining-your-data)
 
 ## How to contribute
 
@@ -44,14 +45,16 @@ ex name: `items.json`
 
 ### Defining your data model
 
-Defines the object and includes data types, and form field types for each item.
+Defines the item object and includes data types, names, and form field types for each item property.
 
-Current supported field types: `input`, `textarea`
+**Current supported field types: `input` `textarea`**
 
-**Now follows the [angular-formly](http://docs.angular-formly.com/) api!**
 
-ex name: `item.json`
+** This project follows the Formly api for it's data structure. I will try to add a simplified version of types and templateOptions here soon, but for now you can reference the [Formly api](http://docs.angular-formly.com/)**
 
+Default file is included in `./models/item.json`
+
+Example item properties:
 ```
 [
   {
