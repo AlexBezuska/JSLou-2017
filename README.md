@@ -34,9 +34,9 @@ ex name: `items.json`
 
 ```
 [
-  { "id": "1", "fullName": "January", "textarea": "I just started a band with my friends!" },
-  { "id": "2", "fullName": "Pip", "textarea": "I am the prince, and you will serve me." },
-  { "id": "3", "fullName": "Walibur", "textarea": "Snow feels so odd on my feet" }
+  { "id": "1", "fullName": "January", "funFact": "I just started a band with my friends!" },
+  { "id": "2", "fullName": "Pip", "funFact": "I am the prince, and you will serve me." },
+  { "id": "3", "fullName": "Walibur", "funFact": "Snow feels so odd on my feet" }
 ]
 ```
 
