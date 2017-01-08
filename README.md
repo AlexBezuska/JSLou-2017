@@ -5,7 +5,12 @@
 
 ## How it works
 
-This is a web app that takes a two JSON files, one with data in the form of an array of JSON object, and one that defines a form for creating those objects.
+This is a web app that takes a two JSON files:
+
+* One that is an array of objects
+* and one that is a template for objects
+
+This project will create a web page with a table of objects, and a form for creating, updating, and deleting those objects.
 
 The resulting objects can be used for anything: blog posts, events, portfolio items etc.
 
