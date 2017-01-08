@@ -113,10 +113,9 @@ In the JSON file you linked to in `config.json` > `formFile` you can customize a
   }
 ]
 ```
- You can also specify placeholder text for most fields on your form, for example:
 
-
- #### Adding place-holder text
+### More options in your form
+#### Adding place-holder text
 
  Some fields will allow placeholder text to be added using the `"placeholder"` property in `"templateOptions"`:
  ```
@@ -131,7 +130,7 @@ In the JSON file you linked to in `config.json` > `formFile` you can customize a
  },
  ```
 
- #### Making fields required
+#### Making fields required
 
  To make a field required add the `"required": true` property in `"templateOptions"`:
  ```
@@ -146,7 +145,7 @@ In the JSON file you linked to in `config.json` > `formFile` you can customize a
  },
  ```
 
- #### Providing helper text or description for a field
+#### Providing helper text or description for a field
 
  To add helper text use the `"description"` property in `"templateOptions"`:
  ```
@@ -161,7 +160,7 @@ In the JSON file you linked to in `config.json` > `formFile` you can customize a
  },
  ```
 
- #### Read only fields
+#### Read only fields
 
  This is useful for working with existing data that you want to see in your form but not change, use the `"readonly": true` property in `"templateOptions"`:
  ```
