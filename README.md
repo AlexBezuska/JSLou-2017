@@ -12,26 +12,40 @@ items can be anything, blog posts, events etc. anything that follows this format
 
 Defines the object and includes data types, and form field types for each item.
 
+Current supported field types: `input`, `textarea`
+
+**Now follows the [angular-formly](http://docs.angular-formly.com/) api!**
+
 ex name: `item.json`
 
 ```
-{
-  "id": {
-    "label": "id",
-    "type": "private"
+[
+  {
+    "key": "id",
+    "type": "input",
+    "templateOptions": {
+      "readonly": true,
+      "label": "id"
+    }
   },
-  "title": {
-    "label": "Event Title",
-    "type": "text",
-    "element": "input"
+  {
+    "key": "fullName",
+    "type": "input",
+    "templateOptions": {
+      "required": true,
+      "label": "Full Name",
+      "placeholder": "this is an input"
+    }
   },
-  "description": {
-    "label": "Description",
-    "element": "textarea",
-    "type": "textarea"
+  {
+    "key": "funFact",
+    "type": "textarea",
+    "templateOptions": {
+      "label": "Fun Fact",
+      "placeholder": "This is a text area."
+    }
   }
-  ...
-}
+]
 ```
 
 **itemsJson**
@@ -41,10 +55,9 @@ ex name: `items.json`
 
 ```
 [
-  { "id": "1", "title": "Thing 1", "description": "..." },
-  { "id": "2", "title": "Thing 2", "description": "..." },
-  { "id": "3", "title": "Thing 3", "description": "..." },
-  ...
+  { "id": "1", "fullName": "January", "textarea": "I just started a band with my friends!" },
+  { "id": "2", "fullName": "Pip", "textarea": "I am the prince, and you will serve me." },
+  { "id": "3", "fullName": "Walibur", "textarea": "Snow feels so odd on my feet" }
 ]
 ```
 
