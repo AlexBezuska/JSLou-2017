@@ -8,50 +8,121 @@
     }
   },
   {
-    "key": "input",
     "type": "input",
+    "key": "firstName",
     "templateOptions": {
-      "required": true,
-      "label": "Input",
-      "placeholder": "this is an input"
+      "type": "email",
+      "placeholder": "jane doe",
+      "label": "First name"
     }
   },
   {
-    "key": "textarea",
     "type": "textarea",
+    "key": "about",
     "templateOptions": {
-      "label": "Text Area",
-      "placeholder": "This is a text area."
+      "placeholder": "I like puppies",
+      "label": "Tell me about yourself",
+      "rows": 4,
+      "cols": 15
     }
   },
   {
-    "key": "file",
-    "type": "file",
-    "templateOptions": {
-      "label": "File input",
-      "description": "Example block-level help text here",
-      "url": "https://example.com/upload"
-    }
-  },
-  {
-    "key": "checkbox",
     "type": "checkbox",
+    "key": "checkThis",
     "templateOptions": {
-      "label": "Checkboxes"
+      "label": "Check this box"
     }
   },
   {
-    "key": "radio",
+    "key": "roles",
+    "type": "multiCheckbox",
+    "templateOptions": {
+      "label": "Roles",
+      "options": [{"id": 1, "title" : "Administrator"}, {"id": 2, "title" : "User"}],
+      "valueProp": "id",
+      "labelProp": "title"
+    }
+  },
+  {
+    "key": "triedEmber",
     "type": "radio",
     "templateOptions": {
-      "label": "Radio Buttons"
+      "label": "Have you played Night in the Woods yet?",
+      "options": [
+        {
+          "name": "Yes, and I love it!",
+          "value": "yesyes"
+        },
+        {
+          "name": "Hey, that game isn't out yet...",
+          "value": "yesno"
+        },
+        {
+          "name": "Nope",
+          "value": "no"
+        }
+      ]
     }
   },
   {
-    "key": "date",
-    "type": "date",
+    "key": "transportation",
+    "type": "select",
     "templateOptions": {
-      "label": "Date"
+      "label": "How do you get around in the city",
+      "valueProp": "name",
+      "options": [
+        {
+          "name": "Car"
+        },
+        {
+          "name": "Helicopter"
+        },
+        {
+          "name": "Sport Utility Vehicle"
+        },
+        {
+          "name": "Bicycle",
+          "group": "low emissions"
+        },
+        {
+          "name": "Skateboard",
+          "group": "low emissions"
+        },
+        {
+          "name": "Walk",
+          "group": "low emissions"
+        },
+        {
+          "name": "Bus",
+          "group": "low emissions"
+        },
+        {
+          "name": "Scooter",
+          "group": "low emissions"
+        },
+        {
+          "name": "Train",
+          "group": "low emissions"
+        },
+        {
+          "name": "Hot Air Baloon",
+          "group": "low emissions"
+        }
+      ]
+    }
+  },
+  {
+    "type": "file",
+    "key": "fileUpload",
+    "templateOptions": {
+      "label": "File Upload"
+    }
+  },
+  {
+    "type": "date",
+    "key": "datePicker",
+    "templateOptions": {
+      "label": "Date Picker"
     }
   }
 ]
