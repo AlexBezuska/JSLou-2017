@@ -19,33 +19,29 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 var config = require('./config.json');
 
-var itemsFile = [];
+var dataFile = [];
 try{
-  var itemsFile = require(config.itemsFile);
+  var dataFile = require(config.dataFile);
 }catch(e){}
 
 var state = {
-  itemsFile : config.itemsFile,
-  items: itemsFile,
-  itemModel : require(config.itemFile),
-  itemDefaults : require(config.itemFile),
+  dataFile : config.dataFile,
+  data: dataFile,
+  formModel : require(config.formFile),
+  itemDefaults : require(config.formFile),
   task: "create"
 }
 
 fixIds(state);
 
-app.get('/', function (req, res) {
-  res.render('home', {layout: 'main'});
-});
-
-app.get('/manage-items', function (req, res, next) {
+app.get('/', function (req, res, next) {
   var itemId = req.query.id;
   if (itemId) {
     if (itemExists(state, itemId)) {
       state.task = "edit";
       var selecteditem = selectitem(state, itemId);
       state.idCurrentlyEditing = selecteditem.id;
-      state.itemModel = smashPostBodyIntoModel(state.itemModel, selecteditem);
+      state.formModel = smashPostBodyIntoModel(state.formModel, selecteditem);
     } else {
       console.log("invalid item id", itemId);
       fillDefaults(state);
@@ -54,10 +50,10 @@ app.get('/manage-items', function (req, res, next) {
     fillDefaults(state);
   }
 
-  res.render('manage-items', {
+  res.render('main', {
     editingitem: req.params.editingitem,
-    additem: state.itemModel,
-    items: state.items,
+    formModel: state.formModel,
+    data: state.data,
     state: state,
     serverPort: config.serverPort,
     layout: 'main'
@@ -65,55 +61,55 @@ app.get('/manage-items', function (req, res, next) {
 
 });
 
-app.post('/manage-items/submit', function(req, res, next) {
+app.post('/submit', function(req, res, next) {
   console.log("req.body",req.body);
-  writeitemsFile (state.itemsFile, additem(state, req.body));
-  res.redirect('/manage-items');
+  writeDataFile (state.dataFile, additem(state, req.body));
+  res.redirect('/');
 });
 
-app.get('/delete-item', function(req, res, next) {
+app.get('/delete', function(req, res, next) {
   var itemId = req.query.id;
-  writeitemsFile (state.itemsFile, deleteitem(state, itemId) );
-  res.redirect('/manage-items');
+  writeDataFile (state.dataFile, deleteitem(state, itemId) );
+  res.redirect('/');
 });
 
 
 app.listen(parseFloat(config.serverPort), function() {
   var url = 'http://127.0.0.1:'+ config.serverPort;
   console.log('Server running at', url);
-  open(url + '/manage-items');
+  open(url + '/');
 });
 
 function fillDefaults(state){
   state.task = "create";
-  var itemModel = state.itemModel;
-  for (var i = 0; i < itemModel.length; i++) {
-    itemModel[i].data = itemModel[i].templateOptions.placeholder || "";
+  var formModel = state.formModel;
+  for (var i = 0; i < formModel.length; i++) {
+    formModel[i].data = formModel[i].templateOptions.placeholder || "";
   }
-  state.itemModel = itemModel;
+  state.formModel = formModel;
 }
 
 function itemExists(state, id){
   if (id === ""){
     return false;
   }
-  return cleanJSON(state.items).filter(
+  return cleanJSON(state.data).filter(
     obj => obj.id === id
   ).length > 0;
 }
 
 function selectitem(state, id){
-  return cleanJSON(state.items).filter(
+  return cleanJSON(state.data).filter(
     obj => obj.id === id
   )[0];
 }
 
 function deleteitem(state, id){
-  state.items = cleanJSON(state.items).filter(
+  state.data = cleanJSON(state.data).filter(
     obj => obj.id !== id
   );
   console.log("Delete item with id:", id);
-  return state.items;
+  return state.data;
 }
 
 function cleanJSON(input){
@@ -133,7 +129,7 @@ function smashPostBodyIntoModel(model, postBody){
 }
 
 function additem(state, thisitem){
-  smashPostBodyIntoModel(state.itemModel, thisitem);
+  smashPostBodyIntoModel(state.formModel, thisitem);
   if (itemExists(state, thisitem.id)){
     var storeId = thisitem.id;
     deleteitem(state, thisitem.id);
@@ -144,14 +140,14 @@ function additem(state, thisitem){
     console.log("Created new item with id:", thisitem.id);
   }
 
-  var newArray = cleanJSON(state.items);
+  var newArray = cleanJSON(state.data);
   newArray.unshift(thisitem);
-  state.items = newArray;
+  state.data = newArray;
   return newArray;
 }
 
 function fixIds(state){
-  var newArray = cleanJSON(state.items);
+  var newArray = cleanJSON(state.data);
   var idsWereAdded = false;
   for (var i = 0; i < newArray.length; i++) {
     if (!newArray[i].id) {
@@ -161,11 +157,11 @@ function fixIds(state){
     }
   }
   if (idsWereAdded) {
-    writeitemsFile (state.itemsFile, newArray);
+    writeDataFile (state.dataFile, newArray);
   }
 }
 
-function writeitemsFile (outputFile, data) {
+function writeDataFile (outputFile, data) {
   var data = JSON.stringify(data, null, 2);
   if (data){
     fs.writeFile(outputFile, data, 'utf-8', function(err) {

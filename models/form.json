@@ -11,17 +11,36 @@
     "type": "input",
     "key": "firstName",
     "templateOptions": {
+      "type": "text",
+      "placeholder": "January",
+      "label": "First name",
+      "description": "This is simply a place to write your name."
+    }
+  },
+  {
+    "type": "input",
+    "key": "age",
+    "templateOptions": {
+      "type": "number",
+      "placeholder": "1",
+      "label": "Age"
+    }
+  },
+  {
+    "type": "input",
+    "key": "emailAddress",
+    "templateOptions": {
       "type": "email",
-      "placeholder": "jane doe",
-      "label": "First name"
+      "placeholder": "sample@email.io",
+      "label": "Email Address"
     }
   },
   {
     "type": "textarea",
-    "key": "about",
+    "key": "funFact",
     "templateOptions": {
-      "placeholder": "I like puppies",
-      "label": "Tell me about yourself",
+      "placeholder": "I just started a band with my friends!",
+      "label": "Fun fact about yourself",
       "rows": 4,
       "cols": 15
     }
@@ -44,22 +63,26 @@
     }
   },
   {
-    "key": "triedEmber",
+    "key": "vacation",
     "type": "radio",
     "templateOptions": {
-      "label": "Have you played Night in the Woods yet?",
+      "label": "Where would you rather vacation?",
       "options": [
         {
-          "name": "Yes, and I love it!",
-          "value": "yesyes"
+          "name": "YMars",
+          "value": "mars"
         },
         {
-          "name": "Hey, that game isn't out yet...",
-          "value": "yesno"
+          "name": "Venus",
+          "value": "venus"
         },
         {
-          "name": "Nope",
-          "value": "no"
+          "name": "Neptune",
+          "value": "neptune"
+        },
+        {
+          "name": "Canada",
+          "value": "canada"
         }
       ]
     }
@@ -119,10 +142,11 @@
     }
   },
   {
-    "type": "date",
-    "key": "datePicker",
+    "type": "input",
+    "key": "birthday",
     "templateOptions": {
-      "label": "Date Picker"
+      "type": "date",
+      "label": "Birthday"
     }
   }
 ]

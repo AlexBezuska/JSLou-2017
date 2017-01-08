@@ -5,9 +5,11 @@
 
 ## How it works
 
-This is a web app that takes a two JSON files, one with items and one that defines an item (data model).
+This is a web app that takes a two JSON files, one with data in the form of an array of JSON object, and one that defines a form for creating those objects.
 
-Items can be anything, blog posts, events, portfolio items etc. anything that follows the [Formly api format](#defining-your-data-model)
+The resulting objects can be used for anything: blog posts, events, portfolio items etc.
+
+The JSON to create the form uses the [Formly api format](#defining-your-data-model) to keep things consistent.
 
 ## How to contribute
 
@@ -28,32 +30,25 @@ Items can be anything, blog posts, events, portfolio items etc. anything that fo
 
 ### `config.json` options
 
-* **"itemsFile"** - (string) - path to where the actual data is/will be stored, this file can start blank or use existing data, but all objects added will use the format described in `itemFile`.
+* **"dataFile"** - (string) - path to where the actual data is/will be stored, this file can start blank or use existing data, but all objects added will use the format described in `formFile`.
 ex name: `items.json`
 
 ```
 [
-  { "id": "1", "fullName": "January", "funFact": "I just started a band with my friends!" },
-  { "id": "2", "fullName": "Pip", "funFact": "I am the prince, and you will serve me." },
-  { "id": "3", "fullName": "Walibur", "funFact": "Snow feels so odd on my feet" }
+  { "id": "1", "name": "January", "age": 1, "funFact": "I just started a band with my friends!" },
+  { "id": "2", "name": "Pip", "age": 10, "funFact": "I am the prince, and you will serve me." },
+  { "id": "3", "name": "Walibur", "age": 1, "funFact": "I don't know anything!" }
 ]
 ```
 
-* **"itemFile"** - (string) - JSON file that will act as a template (or model) for what the data in your item objects will look like. Must contain an array of objects as described in [Defining you data model](#defining-your-data-model)
+* **"formFile"** - (string) - JSON file that will act as a template for the form *and* the data objects. Must contain an array of objects as described in [Defining you data model](#defining-your-data-model)
 * **"serverPort"** - (string) - Port you wish to run the app on, default is '4000'
 
-### Defining your data model
+### Building your form
 
-Defines the item object and includes data types, names, and form field types for each item property.
+In the JSON file you linked to in 'config.json' > `formFile` you can customize and configure your form. Think of it as a big list of fields you want to use.
+for example if you wanted to create a form that asks for name, age, and a fun fact it would start like this (id is required and must be in all forms):
 
-**Current supported field types: `input`, `textarea`, and `option`**
-
-
-** This project follows the Formly api for it's data structure. I will try to add a simplified version of "type" options and "templateOptions" here soon, but for now you can reference the [Formly api](http://docs.angular-formly.com/)**
-
-Default file is included in `./models/item.json`
-
-Example item properties:
 ```
 [
   {
@@ -65,21 +60,93 @@ Example item properties:
     }
   },
   {
-    "key": "fullName",
+    "key": "name",
     "type": "input",
     "templateOptions": {
-      "required": true,
-      "label": "Full Name",
-      "placeholder": "this is an input"
+      "type": "text",
+      "label": "Name"
+    }
+  },
+  {
+    "key": "age",
+    "type": "input",
+    "templateOptions": {
+      "type": "number",
+      "label": "Age"
     }
   },
   {
     "key": "funFact",
     "type": "textarea",
     "templateOptions": {
-      "label": "Fun Fact",
-      "placeholder": "This is a text area."
+      "label": "Fun fact about yourself"
     }
   }
 ]
 ```
+ You can also specify placeholder text for most fields on your form, for example:
+
+
+ ##### Adding place-holder text
+
+ Some fields will allow placeholder text to be added using the `"placeholder"` property in `"templateOptions"`:
+ ```
+ {
+   "key": "name",
+   "type": "input",
+   "templateOptions": {
+     "type": "text",
+     "label": "Name",
+     "placeholder": "Your full name goes here"
+   }
+ },
+ ```
+
+ ##### Making fields required
+
+ To make a field required add the `"required": true` property in `"templateOptions"`:
+ ```
+ {
+   "key": "name",
+   "type": "input",
+   "templateOptions": {
+     "type": "text",
+     "label": "Name",
+     "required": true
+   }
+ },
+ ```
+
+ ##### Providing helper text or description for a field
+
+ To add helper text use the `"description"` property in `"templateOptions"`:
+ ```
+ {
+   "key": "name",
+   "type": "input",
+   "templateOptions": {
+     "type": "text",
+     "label": "Name",
+     "description": "This is simply a place to write your name."
+   }
+ },
+ ```
+
+ ##### Read only fields
+
+ This is useful for working with existing data that you want to see in your form but not change, use the `"readonly": true` property in `"templateOptions"`:
+ ```
+ {
+   "key": "id",
+   "type": "input",
+   "templateOptions": {
+     "readonly": true,
+     "label": "id"
+   }
+ },
+ ```
+
+
+**Current supported field types: `input`, `textarea`, and `option`**
+
+** This project follows the Formly api for it's data structure. I will try to add a simplified version of "type" options and "templateOptions" here soon, but for now you can reference the [Formly api](http://docs.angular-formly.com/)**

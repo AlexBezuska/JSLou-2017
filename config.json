@@ -1,5 +1,5 @@
 {
-  "itemsFile": "./data/items.json",
-  "itemFile": "./models/item.json",
+  "dataFile": "./data/data.json",
+  "formFile": "./models/form.json",
   "serverPort": "4000"
 }

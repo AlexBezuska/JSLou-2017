@@ -1,7 +1,18 @@
 {{#ifEqual this.type "checkbox"}}
-
 <div class="alert alert-warning">
-  <span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span> <strong>Warning!</strong> Checkboxes not supported yet.
+  <span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span> <strong>Warning!</strong> Checkbox not supported yet.
+  <br/>Something in the template is broken... need to fix it.
 </div>
+<input
+type="{{this.type}}"
+id="this.key"
+name="{{this.key}}"
 
+{{#if this.data}}
+value="{{this.data}}"
+{{else}}
+value="{{this.templateOptions.placeholder}}"
+{{/if}}
+
+{{#if this.templateOptions.required}}required{{/if}} {{#if this.templateOptions.readonly}}readonly{{/if}} />
 {{/ifEqual}}

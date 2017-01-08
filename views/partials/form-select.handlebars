@@ -1,4 +1,7 @@
 {{#ifEqual this.type "select"}}
+<div class="alert alert-info">
+  <span class="glyphicon glyphicon-comment" aria-hidden="true"></span> <strong>Note</strong> Select works for sending data but not for displaying the currently selected option based on the written data. Need to fix it.
+</div>
 <select id="{{this.key}}" name="{{this.key}}">
   {{#each this.templateOptions.options}}
     <option value="{{name}}">{{name}}</option>
