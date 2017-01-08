@@ -27,7 +27,7 @@ Items can be anything, blog posts, events, portfolio items etc. anything that fo
 * Navigate to [localhost:1337](localhost:1337) in your browser to view the site
 
 
-### `config.json` operations
+### `config.json` options
 
 * **"itemsFile"** - (string) - path to where the actual data is/will be stored, this file can start blank or use existing data, but all objects added will use the format described in `itemJson`.
 ex name: `items.json`
