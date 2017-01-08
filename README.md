@@ -35,9 +35,33 @@ ex name: `items.json`
 
 ```
 [
-  { "id": "1", "name": "January", "age": 1, "funFact": "I just started a band with my friends!" },
-  { "id": "2", "name": "Pip", "age": 10, "funFact": "I am the prince, and you will serve me." },
-  { "id": "3", "name": "Walibur", "age": 1, "funFact": "I don't know anything!" }
+  {
+    "id": "f35d9e3d-4838-4bbb-8b38-3b3e8484128b",
+    "firstName": "January",
+    "age": "1",
+    "emailAddress": "january@januarybear.me",
+    "funFact": "I just started a band with my friends!",
+    "transportation": "Scooter",
+    "birthday": "2016-01-01"
+  },
+  {
+    "id": "d4f8913a-9d4a-4ba1-85cd-d20c79617d39",
+    "firstName": "Walibur",
+    "age": "1",
+    "emailAddress": "walibur@chickenhouse.com",
+    "funFact": "I don't know anything!",
+    "transportation": "Sport Utility Vehicle",
+    "birthday": "2016-06-14"
+  },
+  {
+    "id": "fcb750f1-1211-4121-83aa-d9cd9d8e04c0",
+    "firstName": "Pip",
+    "age": "10",
+    "emailAddress": "pip@balthasar.com",
+    "funFact": "I am the prince, and you will serve me.",
+    "transportation": "Hot Air Baloon",
+    "birthday": "2006-03-20"
+  }
 ]
 ```
 
