@@ -5,9 +5,9 @@
 
 ## How it works
 
-This is a web app that takes a two JSON files, one with items and one that defines an item.
+This is a web app that takes a two JSON files, one with items and one that defines an item (data model).
 
-Items can be anything, blog posts, events, portfolio items etc. anything that follows the [Formly api format](#defining-your-data)
+Items can be anything, blog posts, events, portfolio items etc. anything that follows the [Formly api format](#defining-your-data-model)
 
 ## How to contribute
 
@@ -40,7 +40,7 @@ ex name: `items.json`
 ]
 ```
 
-* **"itemFile"** - (string) - JSON file that will act as a template (or model) for what the data in your item objects will look like. Must contain an array of objects as described in [Defining you data model](#defining-your-data)
+* **"itemFile"** - (string) - JSON file that will act as a template (or model) for what the data in your item objects will look like. Must contain an array of objects as described in [Defining you data model](#defining-your-data-model)
 * **"serverPort"** - (string) - Port you wish to run the app on, default is '4000'
 
 ### Defining your data model
