@@ -1,13 +1,26 @@
-<span class="form-buttons">
+<div class="row">
 
-  <button type="submit" class="btn btn-success pull-right">
-    <span class="glyphicon glyphicon-save-file" aria-hidden="true"></span>
-    {{#ifEqual state.task "create"}}Schedule item{{/ifEqual}}
-    {{#ifEqual state.task "edit"}}Submit Changes{{/ifEqual}}
-  </button>
+  
+  <div class="col-md-3 pull-right">
+    <button type="submit" class="btn btn-success">
+      <span class="glyphicon glyphicon-save-file" aria-hidden="true"></span>
+      {{#ifEqual state.task "create"}}Schedule item{{/ifEqual}}
+      {{#ifEqual state.task "edit"}}Submit Changes{{/ifEqual}}
+    </button>
+  </div>
 
-  <a href="/manage-items" class="btn btn-default pull-right clear-form-btn">
-    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Clear Form
-  </a>
+  <div class="col-md-3 pull-right">
+    <a href="/manage-items" class="btn btn-default clear-form-btn">
+      <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Clear Form
+    </a>
+  </div>
 
-</span>
+</div>
+
+
+
+
+
+
+
+
