@@ -5,21 +5,21 @@
 
 ## How it works
 
-This is a web app that takes a two JSON files:
+This is a web app that takes two JSON files:
 
-* One that is an array of objects
-* and one that is a template for objects
+* one that is an array of objects, and
+* one that is a template for creating objects
 
 This project will create a web page with a table of objects, and a form for creating, updating, and deleting those objects.
 
-The resulting objects can be used for anything: blog posts, events, portfolio items etc.
+The resulting objects can be used for anything: blog posts, events, portfolio items, etc.
 
-The JSON to create the form uses the [Formly api format](#defining-your-data-model) to keep things consistent.
+The JSON to create the form uses the [Formly API format](#defining-your-data-model) to keep things consistent.
 
 ## How to contribute
 
 * Check the [github issues](https://github.com/AlexBezuska/json-editor/issues) to see if any specific help is needed, there might be something that fits your skills!
-* Other pull requests are always welcome, especially for errors or tyops you discover, adding cool new features to help the community.
+* Other pull requests are always welcome, especially for errors or tyops you discover, or adding cool new features to help the community.
 
 ## Instructions
 
@@ -36,7 +36,8 @@ The JSON to create the form uses the [Formly api format](#defining-your-data-mod
 ### `config.json` options
 
 * **"dataFile"** - (string) - path to where the actual data is/will be stored, this file can start blank or use existing data, but all objects added will use the format described in `formFile`.
-ex name: `items.json`
+
+The example file provided is: `data.json`
 
 ```
 [
@@ -56,7 +57,7 @@ ex name: `items.json`
     "emailAddress": "walibur@chickenhouse.com",
     "funFact": "I don't know anything!",
     "transportation": "Sport Utility Vehicle",
-    "birthday": "2016-06-14"
+    "birthday": "2016-07-14"
   },
   {
     "id": "fcb750f1-1211-4121-83aa-d9cd9d8e04c0",
@@ -75,8 +76,7 @@ ex name: `items.json`
 
 ### Building your form
 
-In the JSON file you linked to in 'config.json' > `formFile` you can customize and configure your form. Think of it as a big list of fields you want to use.
-for example if you wanted to create a form that asks for name, age, and a fun fact it would start like this (id is required and must be in all forms):
+In the JSON file you linked to in `config.json` > `formFile` you can customize and configure your form. Think of it as a big list of fields you want to use. For example if you wanted to create a form that asks for name, age, and a fun fact it would start like this (id is required and must be in all forms):
 
 ```
 [
@@ -116,7 +116,7 @@ for example if you wanted to create a form that asks for name, age, and a fun fa
  You can also specify placeholder text for most fields on your form, for example:
 
 
- ##### Adding place-holder text
+ #### Adding place-holder text
 
  Some fields will allow placeholder text to be added using the `"placeholder"` property in `"templateOptions"`:
  ```
@@ -131,7 +131,7 @@ for example if you wanted to create a form that asks for name, age, and a fun fa
  },
  ```
 
- ##### Making fields required
+ #### Making fields required
 
  To make a field required add the `"required": true` property in `"templateOptions"`:
  ```
@@ -146,7 +146,7 @@ for example if you wanted to create a form that asks for name, age, and a fun fa
  },
  ```
 
- ##### Providing helper text or description for a field
+ #### Providing helper text or description for a field
 
  To add helper text use the `"description"` property in `"templateOptions"`:
  ```
@@ -161,7 +161,7 @@ for example if you wanted to create a form that asks for name, age, and a fun fa
  },
  ```
 
- ##### Read only fields
+ #### Read only fields
 
  This is useful for working with existing data that you want to see in your form but not change, use the `"readonly": true` property in `"templateOptions"`:
  ```
@@ -178,4 +178,4 @@ for example if you wanted to create a form that asks for name, age, and a fun fa
 
 **Current supported field types: `input`, `textarea`, and `option`**
 
-** This project follows the Formly api for it's data structure. I will try to add a simplified version of "type" options and "templateOptions" here soon, but for now you can reference the [Formly api](http://docs.angular-formly.com/)**
+**This project follows the Formly API for it's data structure. I will try to add a simplified version of "type" options and "templateOptions" here soon, but for now you can reference the [Formly API](http://docs.angular-formly.com/)**
