@@ -1,7 +1,10 @@
-## JSON Editor (temporary title)
+## Need Input
+Generate forms to make editing json easier!
 ### by [Alex Bezuska](https://twitter.com/abezuska)
 
 ##### Project started: 2017.01.06
+
+*"Ooo... Input."* - Johnny Five
 
 ## How it works
 
