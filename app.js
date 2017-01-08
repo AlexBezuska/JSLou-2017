@@ -18,9 +18,14 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 var config = require('./config.json');
 
+var itemsFile = [];
+try{
+  var itemsFile = require(config.itemsFile);
+}catch(e){}
+
 var state = {
   itemsFile : config.itemsFile,
-  items: require(config.itemsFile),
+  items: itemsFile,
   itemModel : require(config.itemFile),
   itemDefaults : require(config.itemFile),
   task: "create"
