@@ -1,0 +1,16 @@
+<div class="container-fluid top">
+
+  <div class="row">
+    <div class="col-md-6">
+      {{> data-table}}
+    </div>
+
+    <div class="col-md-6">
+      <form class="form-module form-horizontal" action="http://127.0.0.1:{{serverPort}}/submit" method="post">
+        {{> need-input/form}}
+        {{> form-buttons}}
+      </form>
+    </div>
+  </div>
+
+</div>

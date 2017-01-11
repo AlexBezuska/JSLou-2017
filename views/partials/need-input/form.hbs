@@ -1,0 +1,17 @@
+{{#each formModel}}
+  <div class="form-group form-{{this.key}}">
+
+    {{> need-input/label}}
+    <div class="control-item">
+      {{> need-input/input}}
+      {{> need-input/textarea}}
+      {{> need-input/checkbox}}
+      {{> need-input/multiCheckbox}}
+      {{> need-input/radio}}
+      {{> need-input/select}}
+      {{> need-input/file}}
+      {{> need-input/description}}
+    </div>
+
+  </div>
+{{/each}}

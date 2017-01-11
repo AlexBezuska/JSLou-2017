@@ -1,3 +1,4 @@
+var path = require('path');
 var uuid = require('uuid');
 var fs = require('fs');
 var moment = require('moment');
@@ -5,15 +6,32 @@ var open = require('open');
 var express = require('express');
 var bodyParser = require('body-parser');
 var app = express();
-var handlebars = require('express-handlebars');
-var hbs = handlebars.create({
+
+
+// var handlebars = require('express-handlebars');
+// var hbs = handlebars.create({
+//   helpers: {
+//     ifEqual: require("./helpers/ifEqual.js"),
+//     count: require("./helpers/count.js")
+//   }
+// });
+// app.engine('.hbs', hbs.engine);
+// app.set('view engine', '.hbs');
+
+
+app.set('views', path.join(__dirname, 'views'));
+var exphbs  = require('express-handlebars');
+var hbs = exphbs.create({
+  extname: '.hbs',
   helpers: {
     ifEqual: require("./helpers/ifEqual.js"),
     count: require("./helpers/count.js")
   }
 });
-app.engine('handlebars', hbs.engine);
-app.set('view engine', 'handlebars');
+app.engine('.hbs', hbs.engine);
+app.set('view engine', '.hbs');
+
+
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({ extended: true }));
 
