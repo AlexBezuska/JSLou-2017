@@ -1,5 +1,10 @@
 {{#ifEqual this.type "radio"}}
-<div class="alert alert-warning">
-  <span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span> <strong>Warning!</strong> Radio buttons not supported yet.
-</div>
+{{this.data}}
+  {{#each this.templateOptions.options}}
+    <div class="radio">
+      <label>
+        <input type="radio" name="{{../key}}" value="{{this.value}}" {{#ifEqual ../this.data this.value }} checked="checked"{{/ifEqual}}> {{this.name}}
+      </label>
+    </div>
+  {{/each}}
 {{/ifEqual}}

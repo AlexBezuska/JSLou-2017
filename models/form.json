@@ -69,7 +69,7 @@
       "label": "Where would you rather vacation?",
       "options": [
         {
-          "name": "YMars",
+          "name": "Mars",
           "value": "mars"
         },
         {

@@ -1,5 +1,38 @@
-{{#ifEqual this.type "multiCheckbox"}}
+{{#ifEqual this.type "file"}}
 <div class="alert alert-warning">
-  <span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span> <strong>Warning!</strong> Multi-checkboxes not supported yet.
+  <span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span> <strong>Warning!</strong> multiCheckbox not supported yet.
 </div>
 {{/ifEqual}}
+
+
+<!-- {
+  "key": "roles",
+  "type": "multiCheckbox",
+  "templateOptions": {
+    "label": "Roles",
+    "options": [
+      {"id": 1, "title" : "Administrator"},
+      {"id": 2, "title" : "User"}
+    ]
+  } -->
+
+{{#ifEqual this.type "multiCheckbox"}}
+{{this.data}}
+  {{#each this.templateOptions.options}}
+    <div class="checkbox">
+      <label>
+        <input type="checkbox" name="{{../key}}-{{this.title}}" id="{{this.id}}" value="{{this.id}}"
+        {{#ifEqual ../this.data this.id }}
+          checked="checked"
+        {{else}}
+          {{#ifEqual this.templateOptions.placeholder this.id}}
+            checked="checked"
+          {{/ifEqual}}
+        {{/ifEqual}}> {{this.title}}
+      </label>
+    </div>
+  {{/each}}
+{{/ifEqual}}
+
+
+

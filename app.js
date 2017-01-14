@@ -7,18 +7,6 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var app = express();
 
-
-// var handlebars = require('express-handlebars');
-// var hbs = handlebars.create({
-//   helpers: {
-//     ifEqual: require("./helpers/ifEqual.js"),
-//     count: require("./helpers/count.js")
-//   }
-// });
-// app.engine('.hbs', hbs.engine);
-// app.set('view engine', '.hbs');
-
-
 app.set('views', path.join(__dirname, 'views'));
 var exphbs  = require('express-handlebars');
 var hbs = exphbs.create({
